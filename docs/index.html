@@ -295,7 +295,7 @@ function renderStrip(){
     const d=addDays(t,i),ds=iso(d),list=evs.filter(e=>e.date===ds);
     const wk=d.getDay()===5||d.getDay()===6;
     out.push(`<div class="day${i===0?" today":""}${wk?" wkend":""}"><div class="dn">${i===0?"Today":d.toLocaleDateString([],{weekday:"short"})}</div><div class="dd">${d.getDate()}</div>${
-      list.map(e=>`<button class="pill ${e.kind}${i<=2&&!["cancelled","info"].includes(e.kind)?" hot":""}" style="--c:${color[e.course]}" data-id="${e.id}">${esc(e.title)}<small>${esc(e.course)}${e.time?" · "+fmtTime(e.time):""}</small></button>`).join("")}</div>`)
+      list.map(e=>`<button class="pill ${e.kind}${i<=2&&!["cancelled","info"].includes(e.kind)?" hot":""}" style="--c:${(KIND[e.kind]||KIND.info)[1]}" data-id="${e.id}">${esc(e.title)}<small>${esc(e.course)}${e.time?" · "+fmtTime(e.time):""}</small></button>`).join("")}</div>`)
   }
   $("#strip").innerHTML=out.join("");
 }
@@ -303,7 +303,7 @@ function renderStrip(){
 function evHTML(e){
   const[kl,kc]=KIND[e.kind]||KIND.info;
   const when=e.time?fmtTime(e.time):"";
-  return `<details class="ev ${e.kind}" id="ev-${e.id}" style="--c:${color[e.course]}">
+  return `<details class="ev ${e.kind}" id="ev-${e.id}" style="--c:${(KIND[e.kind]||KIND.info)[1]}">
    <summary><span class="t"><span class="kind" style="--k:${kc}">${kl}</span>${esc(e.title)}${needsCheck(e)?'<span class="check">Double-check</span>':""}</span>
    <span class="when">${when}</span>
    <span class="c">${esc(e.course)} · ${esc(e.course_name)}${e.where?" · "+esc(e.where):""}</span></summary>
@@ -332,7 +332,7 @@ function renderMonth(){
     const d=addDays(start,i),ds=iso(d);
     if(i===35&&d.getMonth()!==m)break;
     const list=evs.filter(e=>e.date===ds);
-    h+=`<div class="cell${d.getMonth()!==m?" out":""}${ds===t?" today":""}"><span class="n">${d.getDate()}</span>${list.map(e=>`<button class="mev ${e.kind}" style="--c:${color[e.course]}" data-id="${e.id}" title="${esc(e.course+" "+e.title)}">${esc(e.title)}</button>`).join("")}</div>`;
+    h+=`<div class="cell${d.getMonth()!==m?" out":""}${ds===t?" today":""}"><span class="n">${d.getDate()}</span>${list.map(e=>`<button class="mev ${e.kind}" style="--c:${(KIND[e.kind]||KIND.info)[1]}" data-id="${e.id}" title="${esc(e.course+" "+e.title)}">${esc(e.title)}</button>`).join("")}</div>`;
   }
   $("#month").innerHTML=h;
 }
