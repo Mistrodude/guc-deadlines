@@ -6,59 +6,39 @@
 <title>GUC Deadlines</title>
 <style>
 :root {
-  --bg: #F0F2F8;
-  --card: #FFFFFF;
-  --card-2: #F5F6FB;
-  --border: rgba(0,0,0,.07);
-  --ink: #111827;
-  --ink-2: #6B7280;
-  --ink-3: #9CA3AF;
-  --accent: #4F46E5;
-  --accent-soft: #EEF2FF;
-  --signal: #F59E0B;
-  --signal-ink: #78350F;
-  --quiz: #EF4444;
-  --exam: #8B5CF6;
-  --due: #3B82F6;
-  --lab: #10B981;
-  --off: #9CA3AF;
-  --warn-bg: #FFFBEB;
-  --warn: #B45309;
-  --r: 18px;
-  --r-sm: 10px;
-  --shadow: 0 1px 3px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.05);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,.1), 0 1px 4px rgba(0,0,0,.05);
-  box-sizing: border-box;
+  --bg:#F0F2F8; --card:#FFFFFF; --card-2:#F5F6FB; --border:rgba(0,0,0,.07);
+  --ink:#111827; --ink-2:#6B7280; --ink-3:#9CA3AF;
+  --accent:#4F46E5; --signal:#F59E0B; --signal-ink:#78350F;
+  --warn-bg:#FFFBEB; --warn:#B45309;
+  --r:18px; --r-sm:10px;
+  --shadow:0 1px 3px rgba(0,0,0,.05),0 4px 16px rgba(0,0,0,.05);
+  --shadow-lg:0 8px 32px rgba(0,0,0,.1),0 1px 4px rgba(0,0,0,.05);
+  box-sizing:border-box;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0D1117; --card:#161B27; --card-2:#1C2338; --border:rgba(255,255,255,.07);
-  --ink:#E6EAF8; --ink-2:#8892AA; --ink-3:#4E5A76;
-  --accent:#6366F1; --accent-soft:#1E2050;
+  --ink:#E6EAF8; --ink-2:#8892AA; --ink-3:#4E5A76; --accent:#6366F1;
   --warn-bg:#2A1F00; --warn:#FBB040;
   --shadow:0 1px 3px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.2);
   --shadow-lg:0 8px 32px rgba(0,0,0,.5),0 1px 4px rgba(0,0,0,.3);
 }}
 :root[data-theme="dark"]{
   --bg:#0D1117; --card:#161B27; --card-2:#1C2338; --border:rgba(255,255,255,.07);
-  --ink:#E6EAF8; --ink-2:#8892AA; --ink-3:#4E5A76;
-  --accent:#6366F1; --accent-soft:#1E2050;
+  --ink:#E6EAF8; --ink-2:#8892AA; --ink-3:#4E5A76; --accent:#6366F1;
   --warn-bg:#2A1F00; --warn:#FBB040;
   --shadow:0 1px 3px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.2);
   --shadow-lg:0 8px 32px rgba(0,0,0,.5),0 1px 4px rgba(0,0,0,.3);
 }
 *,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{
-  background:var(--bg);color:var(--ink);
+body{background:var(--bg);color:var(--ink);
   font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
   -webkit-font-smoothing:antialiased;font-size:16px;line-height:1.5;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
-}
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.wrap{max-width:940px;margin:0 auto;padding:20px 16px 64px}
+.wrap{max-width:940px;margin:0 auto;padding:20px 16px 90px}
 
 /* ── Header ── */
 header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;flex-wrap:wrap}
@@ -70,11 +50,8 @@ h2{font-size:17px;font-weight:700;letter-spacing:-.2px}
 .alert{background:var(--warn-bg);color:var(--warn);padding:12px 16px;border-radius:var(--r-sm);margin-bottom:14px;font-size:14px;border-left:3px solid var(--warn)}
 
 /* ── Runway ── */
-.runway{
-  background:linear-gradient(140deg,#1a1f3c 0%,#26305a 60%,#1e2848 100%);
-  border-radius:var(--r);padding:18px 0 14px;margin-bottom:18px;
-  box-shadow:var(--shadow-lg);overflow:hidden;
-}
+.runway{background:linear-gradient(140deg,#1a1f3c 0%,#26305a 60%,#1e2848 100%);
+  border-radius:var(--r);padding:18px 0 14px;margin-bottom:18px;box-shadow:var(--shadow-lg);overflow:hidden}
 .runway-head{display:flex;justify-content:space-between;align-items:baseline;padding:0 20px 12px;gap:12px;flex-wrap:wrap}
 .runway-head h2{color:#fff;font-size:16px}
 .runway-head .sub{color:#8896C0;font-size:13px;font-weight:500}
@@ -97,8 +74,21 @@ h2{font-size:17px;font-weight:700;letter-spacing:-.2px}
 .pill.hot{background:rgba(245,158,11,.18);border-left-color:var(--signal);color:#FDE68A}
 .pill.hot small{color:rgba(253,230,138,.6)}
 
+/* ── Color legend ── */
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.legend-item{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;
+  color:var(--ink-2);background:var(--card);border:1px solid var(--border);
+  border-radius:999px;padding:4px 10px 4px 8px;box-shadow:var(--shadow)}
+.legend-item span{width:8px;height:8px;border-radius:50%;background:var(--c);flex-shrink:0}
+.legend-check{background:#fff;color:#374151;border:1.5px solid #D1D5DB}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .legend-check{background:#1C2338;color:var(--ink-2);border-color:#4E5A76}}
+:root[data-theme="dark"] .legend-check{background:#1C2338;color:var(--ink-2);border-color:#4E5A76}
+
 /* ── Filters ── */
-.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.filter-section{margin-bottom:18px}
+.filter-label{font-size:11px;font-weight:700;color:var(--ink-3);text-transform:uppercase;
+  letter-spacing:.06em;margin-bottom:7px}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}
 .chip{border:1.5px solid var(--border);background:var(--card);color:var(--ink);border-radius:999px;
   padding:6px 14px 6px 10px;font-size:13px;font-weight:600;cursor:pointer;
   display:inline-flex;align-items:center;gap:7px;box-shadow:var(--shadow);transition:all .15s}
@@ -179,6 +169,31 @@ code.url{display:block;background:var(--card-2);border:1px solid var(--border);b
   padding:10px 12px;font-size:12px;overflow-x:auto;white-space:nowrap;margin-bottom:12px;
   font-family:"SF Mono","Fira Code",monospace;color:var(--ink-2)}
 footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-height:1.7}
+
+/* ── FAB (floating + button) ── */
+.fab{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:20px;
+  background:var(--accent);color:#fff;border:0;border-radius:999px;
+  padding:14px 20px;font-size:15px;font-weight:700;cursor:pointer;
+  box-shadow:0 4px 20px rgba(79,70,229,.4),0 2px 8px rgba(0,0,0,.15);
+  display:flex;align-items:center;gap:8px;z-index:100;transition:transform .15s,opacity .15s}
+.fab:hover{transform:translateY(-2px);opacity:.9}
+.fab:active{transform:scale(.96)}
+
+/* ── Calendar modal ── */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;display:flex;align-items:flex-end;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .2s}
+.modal-bg.open{opacity:1;pointer-events:all}
+.modal{background:var(--card);border-radius:20px 20px 0 0;padding:24px 20px calc(24px + env(safe-area-inset-bottom,0px));
+  width:100%;max-width:480px;transform:translateY(100%);transition:transform .3s cubic-bezier(.32,0,.15,1)}
+.modal-bg.open .modal{transform:translateY(0)}
+.modal h3{font-size:18px;font-weight:800;margin-bottom:6px}
+.modal p{font-size:14px;color:var(--ink-2);margin-bottom:20px}
+.modal .btn{display:flex;align-items:center;justify-content:center;width:100%;margin:0 0 10px;
+  padding:14px;font-size:15px;border-radius:14px;text-align:center}
+.modal .btn.ghost{border-color:var(--border)}
+.modal-close{position:absolute;top:16px;right:18px;background:var(--card-2);border:0;border-radius:50%;
+  width:30px;height:30px;font-size:18px;color:var(--ink-3);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.modal{position:relative}
 </style>
 </head>
 <body>
@@ -197,7 +212,16 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
     <div class="strip" id="strip"></div>
   </section>
 
-  <div class="filters" id="filters" role="group" aria-label="Show courses"></div>
+  <!-- Color legend -->
+  <div class="legend" id="legend"></div>
+
+  <!-- Filters -->
+  <div class="filter-section">
+    <div class="filter-label">Event type</div>
+    <div class="filters" id="kindFilters" role="group" aria-label="Filter by event type"></div>
+    <div class="filter-label">Course</div>
+    <div class="filters" id="filters" role="group" aria-label="Filter by course"></div>
+  </div>
 
   <div class="grid">
     <section class="panel" aria-labelledby="up-h">
@@ -224,7 +248,7 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
     </section>
     <section class="panel sub" aria-labelledby="s-h" id="subPanel">
       <h2 id="s-h">Add to your calendar</h2>
-      <p style="margin-top:12px">Subscribe once and every quiz and deadline shows up in your phone's calendar, with a reminder the day before. Updates automatically after each scan.</p>
+      <p style="margin-top:12px">Subscribe once and every quiz and deadline shows up in your phone's calendar with a reminder the day before.</p>
       <code class="url" id="icsUrl"></code>
       <a class="btn" id="gcal" target="_blank" rel="noopener">Google Calendar</a>
       <a class="btn ghost" id="webcal">Apple Calendar</a>
@@ -234,14 +258,36 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
   <footer id="foot"></footer>
 </div>
 
+<!-- Floating + button -->
+<button class="fab" id="fabBtn" aria-label="Add to calendar">+ Add to Calendar</button>
+
+<!-- Calendar modal -->
+<div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="modal-h">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <h3 id="modal-h">Add to your calendar</h3>
+    <p>Subscribe once — every quiz and deadline appears automatically with a reminder the day before.</p>
+    <a class="btn" id="mgcal" target="_blank" rel="noopener">Google Calendar</a>
+    <a class="btn ghost" id="mwebcal">Apple Calendar</a>
+    <button class="btn ghost" id="mcopy" type="button">Copy .ics link</button>
+  </div>
+</div>
+
 <script>
 const PALETTE=["#4F46E5","#EF4444","#10B981","#8B5CF6","#F59E0B","#0EA5E9","#EC4899","#84CC16","#F97316"];
-const KIND={quiz:["Quiz","#EF4444"],exam:["Exam","#8B5CF6"],assignment:["Assignment","#3B82F6"],
-  project:["Project","#D97706"],deadline:["Deadline","#3B82F6"],lab:["Lab","#10B981"],
-  cancelled:["Cancelled","#9CA3AF"],info:["Note","#9CA3AF"]};
+const KIND={
+  quiz:     ["Quiz",       "#EF4444"],
+  exam:     ["Exam",       "#8B5CF6"],
+  assignment:["Assignment","#3B82F6"],
+  project:  ["Project",    "#D97706"],
+  deadline: ["Deadline",   "#3B82F6"],
+  lab:      ["Lab",        "#10B981"],
+  cancelled:["Cancelled",  "#9CA3AF"],
+  info:     ["Note",       "#9CA3AF"],
+};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let D,color={},hidden=new Set(),view;
+let D,color={},hidden=new Set(),hiddenKinds=new Set(),view;
 
 function store(k,v){try{v===undefined?null:localStorage.setItem(k,JSON.stringify(v));return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
@@ -251,8 +297,17 @@ const fmtTime=t=>{if(!t)return"";let[h,m]=t.split(":").map(Number);const ap=h>=1
 const today=()=>{const t=new Date();return new Date(t.getFullYear(),t.getMonth(),t.getDate())};
 function rel(ds){const n=Math.round((parse(ds)-today())/864e5);
   return n===0?"today":n===1?"tomorrow":n===-1?"yesterday":n>0?`in ${n} days`:`${-n} days ago`}
-const visible=e=>!hidden.has(e.course);
+const visible=e=>!hidden.has(e.course)&&!hiddenKinds.has(e.kind);
 const needsCheck=e=>e.flags&&e.flags.length&&!(e.by&&e.by.length===2);
+
+// Shorten a course name for the filter chip
+function shortName(name){
+  if(name.length<=20)return name;
+  const skip=new Set(["and","the","for","of","in","a","an","&"]);
+  const words=name.split(/[\s,]+/).filter(w=>w.length>1&&!skip.has(w.toLowerCase()));
+  const s=words.slice(0,3).join(" ");
+  return s.length<=20?s:s.slice(0,18)+"…";
+}
 
 async function load(){
   try{const r=await fetch("events.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;D=await r.json()}
@@ -260,8 +315,9 @@ async function load(){
   if(!D){$("#meta").textContent="No data yet. The robot hasn't run its first scan.";return}
   D.courses.forEach((c,i)=>color[c.code]=PALETTE[i%PALETTE.length]);
   hidden=new Set(store("hidden")||[]);
+  hiddenKinds=new Set(store("hiddenKinds")||[]);
   view=startMonth();
-  renderMeta();renderFilters();renderAll();setupSub();
+  renderMeta();renderLegend();renderKindFilters();renderFilters();renderAll();setupSub();
 }
 function startMonth(){const t=today(),v=new Date(t.getFullYear(),t.getMonth(),1);
   const last=new Date(t.getFullYear(),t.getMonth()+1,0).getDate();if(last-t.getDate()<7)v.setMonth(v.getMonth()+1);return v}
@@ -279,8 +335,45 @@ function renderMeta(){
   $("#foot").innerHTML=`${D.events.length} events across ${D.courses.length} courses${D.ai_check?" · AI double-check enabled":""}`;
 }
 
+function renderLegend(){
+  const items=[
+    {k:"quiz",    label:"Quiz",        color:"#EF4444"},
+    {k:"exam",    label:"Exam",        color:"#8B5CF6"},
+    {k:"assignment",label:"Assignment",color:"#3B82F6"},
+    {k:"project", label:"Project",     color:"#D97706"},
+    {k:"lab",     label:"Lab",         color:"#10B981"},
+    {k:"cancelled",label:"Cancelled",  color:"#9CA3AF"},
+  ];
+  const present=new Set(D.events.map(e=>e.kind));
+  const hasCheck=D.events.some(needsCheck);
+  let html=items.filter(x=>present.has(x.k)).map(x=>
+    `<span class="legend-item" style="--c:${x.color}"><span></span>${x.label}</span>`
+  ).join("");
+  if(hasCheck)html+=`<span class="legend-item legend-check"><span style="background:#D1D5DB"></span>Double-check</span>`;
+  $("#legend").innerHTML=html;
+}
+
+function renderKindFilters(){
+  const kindOrder=["quiz","exam","assignment","project","lab","cancelled","info"];
+  const present=kindOrder.filter(k=>D.events.some(e=>e.kind===k));
+  $("#kindFilters").innerHTML=present.map(k=>{
+    const[label,color]=KIND[k]||KIND.info;
+    return `<button class="chip" type="button" style="--c:${color}" aria-pressed="${!hiddenKinds.has(k)}" data-kind="${k}"><i></i>${label}</button>`;
+  }).join("");
+  $("#kindFilters").onclick=e=>{
+    const b=e.target.closest(".chip");if(!b)return;
+    const k=b.dataset.kind;
+    hiddenKinds.has(k)?hiddenKinds.delete(k):hiddenKinds.add(k);
+    store("hiddenKinds",[...hiddenKinds]);
+    b.setAttribute("aria-pressed",!hiddenKinds.has(k));
+    renderAll();
+  };
+}
+
 function renderFilters(){
-  $("#filters").innerHTML=D.courses.map(c=>`<button class="chip" type="button" style="--c:${color[c.code]}" aria-pressed="${!hidden.has(c.code)}" data-c="${esc(c.code)}" title="${esc(c.name)}"><i></i>${esc(c.code)}</button>`).join("");
+  $("#filters").innerHTML=D.courses.map(c=>
+    `<button class="chip" type="button" style="--c:${color[c.code]}" aria-pressed="${!hidden.has(c.code)}" data-c="${esc(c.code)}" title="${esc(c.name)}"><i></i>${esc(shortName(c.name))}</button>`
+  ).join("");
   $("#filters").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;
     const c=b.dataset.c;hidden.has(c)?hidden.delete(c):hidden.add(c);store("hidden",[...hidden]);
     b.setAttribute("aria-pressed",!hidden.has(c));renderAll()};
@@ -306,7 +399,7 @@ function evHTML(e){
   return `<details class="ev ${e.kind}" id="ev-${e.id}" style="--c:${(KIND[e.kind]||KIND.info)[1]}">
    <summary><span class="t"><span class="kind" style="--k:${kc}">${kl}</span>${esc(e.title)}${needsCheck(e)?'<span class="check">Double-check</span>':""}</span>
    <span class="when">${when}</span>
-   <span class="c">${esc(e.course)} · ${esc(e.course_name)}${e.where?" · "+esc(e.where):""}</span></summary>
+   <span class="c">${esc(e.course_name)}${e.where?" · "+esc(e.where):""}</span></summary>
    <div class="more">${needsCheck(e)?`<p class="fl">${e.flags.map(esc).join(". ")}.</p>`:""}
    <q>${esc(e.text)}</q><a href="${esc(e.url)}" target="_blank" rel="noopener">Open on CMS →</a> <span style="color:var(--ink-3)">· ${esc(e.source)}</span></div></details>`;
 }
@@ -354,12 +447,24 @@ function togglePast(){const p=$("#past");p.hidden=!p.hidden;$("#pastBtn").textCo
 function setupSub(){
   if(window.__EMBED__&&D===window.__EMBED__){$("#subPanel").hidden=true;document.querySelector(".lower").style.gridTemplateColumns="1fr";return}
   const u=new URL("calendar.ics",location.href).href;
-  $("#icsUrl").textContent=u;
   const w=u.replace(/^https?:/,"webcal:");
+  // Bottom panel
+  $("#icsUrl").textContent=u;
   $("#gcal").href="https://calendar.google.com/calendar/render?cid="+encodeURIComponent(w);
   $("#webcal").href=w;
   $("#copy").onclick=async()=>{try{await navigator.clipboard.writeText(u);$("#copy").textContent="Copied!"}catch(e){$("#copy").textContent="Select the link above"}};
+  // Modal
+  $("#mgcal").href=$("#gcal").href;
+  $("#mwebcal").href=w;
+  $("#mcopy").onclick=async()=>{try{await navigator.clipboard.writeText(u);$("#mcopy").textContent="Copied!"}catch(e){$("#mcopy").textContent="Select the link above"}};
 }
+
+// Modal open/close
+function openModal(){$("#modalBg").classList.add("open")}
+function closeModal(){$("#modalBg").classList.remove("open")}
+$("#fabBtn").onclick=openModal;
+$("#modalClose").onclick=closeModal;
+$("#modalBg").onclick=e=>{if(e.target===$("#modalBg"))closeModal()};
 
 document.addEventListener("click",e=>{const b=e.target.closest("[data-id]");if(b)openEvent(b.dataset.id)});
 $("#pastBtn").onclick=togglePast;
