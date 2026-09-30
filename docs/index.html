@@ -255,7 +255,7 @@ const visible=e=>!hidden.has(e.course);
 const needsCheck=e=>e.flags&&e.flags.length&&!(e.by&&e.by.length===2);
 
 async function load(){
-  try{const r=await fetch("events.json",{cache:"no-store"});if(!r.ok)throw 0;D=await r.json()}
+  try{const r=await fetch("events.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;D=await r.json()}
   catch(e){D=window.__EMBED__||null}
   if(!D){$("#meta").textContent="No data yet. The robot hasn't run its first scan.";return}
   D.courses.forEach((c,i)=>color[c.code]=PALETTE[i%PALETTE.length]);
