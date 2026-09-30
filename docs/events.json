@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T17:29+03:00",
+ "generated_at": "2026-09-30T17:46+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-09-30",
  "season": "Winter 2026",
@@ -142,6 +142,25 @@
    "date": "2026-09-29",
    "time": null,
    "kind": "info",
+   "title": "T36-T40 Tuesday Sept 29 th",
+   "where": null,
+   "text": "Tuesday Sept 29 th",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "d0f362535190",
+   "first_seen": "2026-09-30T17:46+03:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-09-29",
+   "time": null,
+   "kind": "info",
    "title": "Tuesday Sept 29 th",
    "where": null,
    "text": "Tuesday Sept 29 th",
@@ -198,8 +217,8 @@
   {
    "date": "2026-10-10",
    "time": null,
-   "kind": "info",
-   "title": "📅 Date: Saturday, 10 October 2026",
+   "kind": "quiz",
+   "title": "Quiz 1",
    "where": null,
    "text": "📅 Date: Saturday, 10 October 2026",
    "source": "Course announcement",
@@ -210,8 +229,8 @@
    "course": "MCTR702",
    "course_name": "Modern Control Engineering",
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
-   "id": "84c77ead103b",
-   "first_seen": "2026-09-30T17:28+03:00",
+   "id": "139e9a207460",
+   "first_seen": "2026-09-30T17:46+03:00",
    "flags_serious": false
   },
   {
