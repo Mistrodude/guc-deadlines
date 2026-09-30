@@ -16,16 +16,16 @@
   box-sizing:border-box;
 }
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0D1117; --card:#161B27; --card-2:#1C2338; --border:rgba(255,255,255,.07);
-  --ink:#E6EAF8; --ink-2:#8892AA; --ink-3:#4E5A76; --accent:#6366F1;
-  --warn-bg:#2A1F00; --warn:#FBB040;
+  --bg:#0D1117;--card:#161B27;--card-2:#1C2338;--border:rgba(255,255,255,.07);
+  --ink:#E6EAF8;--ink-2:#8892AA;--ink-3:#4E5A76;--accent:#6366F1;
+  --warn-bg:#2A1F00;--warn:#FBB040;
   --shadow:0 1px 3px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.2);
   --shadow-lg:0 8px 32px rgba(0,0,0,.5),0 1px 4px rgba(0,0,0,.3);
 }}
 :root[data-theme="dark"]{
-  --bg:#0D1117; --card:#161B27; --card-2:#1C2338; --border:rgba(255,255,255,.07);
-  --ink:#E6EAF8; --ink-2:#8892AA; --ink-3:#4E5A76; --accent:#6366F1;
-  --warn-bg:#2A1F00; --warn:#FBB040;
+  --bg:#0D1117;--card:#161B27;--card-2:#1C2338;--border:rgba(255,255,255,.07);
+  --ink:#E6EAF8;--ink-2:#8892AA;--ink-3:#4E5A76;--accent:#6366F1;
+  --warn-bg:#2A1F00;--warn:#FBB040;
   --shadow:0 1px 3px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.2);
   --shadow-lg:0 8px 32px rgba(0,0,0,.5),0 1px 4px rgba(0,0,0,.3);
 }
@@ -38,7 +38,7 @@ body{background:var(--bg);color:var(--ink);
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.wrap{max-width:940px;margin:0 auto;padding:20px 16px 90px}
+.wrap{max-width:940px;margin:0 auto;padding:20px 16px 100px}
 
 /* ── Header ── */
 header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;flex-wrap:wrap}
@@ -74,7 +74,7 @@ h2{font-size:17px;font-weight:700;letter-spacing:-.2px}
 .pill.hot{background:rgba(245,158,11,.18);border-left-color:var(--signal);color:#FDE68A}
 .pill.hot small{color:rgba(253,230,138,.6)}
 
-/* ── Color legend ── */
+/* ── Legend ── */
 .legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
 .legend-item{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;
   color:var(--ink-2);background:var(--card);border:1px solid var(--border);
@@ -86,8 +86,7 @@ h2{font-size:17px;font-weight:700;letter-spacing:-.2px}
 
 /* ── Filters ── */
 .filter-section{margin-bottom:18px}
-.filter-label{font-size:11px;font-weight:700;color:var(--ink-3);text-transform:uppercase;
-  letter-spacing:.06em;margin-bottom:7px}
+.filter-label{font-size:11px;font-weight:700;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px}
 .filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}
 .chip{border:1.5px solid var(--border);background:var(--card);color:var(--ink);border-radius:999px;
   padding:6px 14px 6px 10px;font-size:13px;font-weight:600;cursor:pointer;
@@ -100,6 +99,8 @@ h2{font-size:17px;font-weight:700;letter-spacing:-.2px}
 .grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;align-items:start}
 @media(max-width:720px){.grid{grid-template-columns:1fr}}
 .panel{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.panel-head h2{margin:0}
 
 /* ── Event List ── */
 .dgroup{margin-bottom:14px}
@@ -117,6 +118,7 @@ details.ev summary::-webkit-details-marker{display:none}
 .ev .when{font-size:14px;font-weight:700;text-align:right;grid-row:1/3;grid-column:2;align-self:center;color:var(--ink-2)}
 .kind{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
   padding:3px 7px;border-radius:5px;margin-right:6px;vertical-align:2px;color:#fff;background:var(--k)}
+.kind.custom-badge{background:var(--accent)}
 .check{display:inline-block;font-size:10px;font-weight:700;padding:3px 7px;border-radius:5px;
   background:#fff;color:#374151;border:1.5px solid #D1D5DB;margin-left:6px;vertical-align:2px}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .check{background:#E8ECF8;color:#1F2937;border-color:#9CA3AF}}
@@ -125,6 +127,9 @@ details.ev summary::-webkit-details-marker{display:none}
 .ev .more q{display:block;border-left:2px solid var(--border);padding-left:10px;margin:6px 0 10px;quotes:none;color:var(--ink);font-style:italic}
 .ev .more .fl{color:var(--warn);margin-bottom:8px}
 .ev .more a{font-weight:600}
+.delete-btn{background:none;border:1px solid #FCA5A5;color:#EF4444;border-radius:7px;
+  padding:5px 12px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
+.delete-btn:hover{background:#FEF2F2}
 .empty{color:var(--ink-3);font-size:15px;padding:12px 2px}
 .toggle-past{background:none;border:0;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;padding:8px 0 0}
 
@@ -170,30 +175,49 @@ code.url{display:block;background:var(--card-2);border:1px solid var(--border);b
   font-family:"SF Mono","Fira Code",monospace;color:var(--ink-2)}
 footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-height:1.7}
 
-/* ── FAB (floating + button) ── */
+/* ── FAB ── */
 .fab{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:20px;
   background:var(--accent);color:#fff;border:0;border-radius:999px;
   padding:14px 20px;font-size:15px;font-weight:700;cursor:pointer;
   box-shadow:0 4px 20px rgba(79,70,229,.4),0 2px 8px rgba(0,0,0,.15);
   display:flex;align-items:center;gap:8px;z-index:100;transition:transform .15s,opacity .15s}
-.fab:hover{transform:translateY(-2px);opacity:.9}
+.fab:hover{transform:translateY(-2px)}
 .fab:active{transform:scale(.96)}
 
-/* ── Calendar modal ── */
-.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;display:flex;align-items:flex-end;justify-content:center;
+/* ── Modals ── */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;
+  display:flex;align-items:flex-end;justify-content:center;
   opacity:0;pointer-events:none;transition:opacity .2s}
 .modal-bg.open{opacity:1;pointer-events:all}
-.modal{background:var(--card);border-radius:20px 20px 0 0;padding:24px 20px calc(24px + env(safe-area-inset-bottom,0px));
-  width:100%;max-width:480px;transform:translateY(100%);transition:transform .3s cubic-bezier(.32,0,.15,1)}
+.modal{background:var(--card);border-radius:20px 20px 0 0;
+  padding:24px 20px calc(24px + env(safe-area-inset-bottom,0px));
+  width:100%;max-width:480px;position:relative;
+  transform:translateY(100%);transition:transform .3s cubic-bezier(.32,0,.15,1)}
 .modal-bg.open .modal{transform:translateY(0)}
-.modal h3{font-size:18px;font-weight:800;margin-bottom:6px}
-.modal p{font-size:14px;color:var(--ink-2);margin-bottom:20px}
-.modal .btn{display:flex;align-items:center;justify-content:center;width:100%;margin:0 0 10px;
-  padding:14px;font-size:15px;border-radius:14px;text-align:center}
+.modal h3{font-size:20px;font-weight:800;margin-bottom:4px}
+.modal .sub-text{font-size:14px;color:var(--ink-2);margin-bottom:20px}
+.modal-close{position:absolute;top:16px;right:18px;background:var(--card-2);border:0;
+  border-radius:50%;width:30px;height:30px;font-size:18px;color:var(--ink-3);cursor:pointer;
+  display:flex;align-items:center;justify-content:center}
+
+/* ── Calendar sub modal ── */
+.modal .btn{display:flex;align-items:center;justify-content:center;width:100%;
+  margin:0 0 10px;padding:14px;font-size:15px;border-radius:14px;text-align:center}
 .modal .btn.ghost{border-color:var(--border)}
-.modal-close{position:absolute;top:16px;right:18px;background:var(--card-2);border:0;border-radius:50%;
-  width:30px;height:30px;font-size:18px;color:var(--ink-3);cursor:pointer;display:flex;align-items:center;justify-content:center}
-.modal{position:relative}
+
+/* ── Add Event form ── */
+.form-field{margin-bottom:14px}
+.form-field label{display:block;font-size:13px;font-weight:600;color:var(--ink-2);margin-bottom:5px}
+.form-field input,.form-field select,.form-field textarea{
+  width:100%;background:var(--card-2);border:1.5px solid var(--border);border-radius:10px;
+  padding:11px 14px;font-size:15px;color:var(--ink);font-family:inherit;outline:none;
+  transition:border-color .15s;-webkit-appearance:none}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--accent)}
+.form-field textarea{resize:vertical;min-height:60px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-actions{display:flex;gap:10px;margin-top:6px}
+.form-actions .btn{flex:1;margin:0;padding:13px;font-size:15px;border-radius:14px;text-align:center}
+.form-err{color:#EF4444;font-size:13px;margin-top:6px;display:none}
 </style>
 </head>
 <body>
@@ -212,10 +236,8 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
     <div class="strip" id="strip"></div>
   </section>
 
-  <!-- Color legend -->
   <div class="legend" id="legend"></div>
 
-  <!-- Filters -->
   <div class="filter-section">
     <div class="filter-label">Event type</div>
     <div class="filters" id="kindFilters" role="group" aria-label="Filter by event type"></div>
@@ -225,8 +247,10 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
 
   <div class="grid">
     <section class="panel" aria-labelledby="up-h">
-      <h2 id="up-h">Coming up</h2>
-      <div id="list" style="margin-top:12px"></div>
+      <div class="panel-head">
+        <h2 id="up-h">Coming up</h2>
+      </div>
+      <div id="list"></div>
       <button class="toggle-past" id="pastBtn" type="button">Show past events</button>
       <div id="past" hidden></div>
     </section>
@@ -258,36 +282,81 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
   <footer id="foot"></footer>
 </div>
 
-<!-- Floating + button -->
-<button class="fab" id="fabBtn" aria-label="Add to calendar">+ Add to Calendar</button>
+<!-- FAB -->
+<button class="fab" id="fabBtn">+ Add Event</button>
 
-<!-- Calendar modal -->
-<div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="modal-h">
+<!-- Add Event Modal -->
+<div class="modal-bg" id="addModal" role="dialog" aria-modal="true" aria-labelledby="add-h">
   <div class="modal">
-    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-    <h3 id="modal-h">Add to your calendar</h3>
-    <p>Subscribe once — every quiz and deadline appears automatically with a reminder the day before.</p>
-    <a class="btn" id="mgcal" target="_blank" rel="noopener">Google Calendar</a>
-    <a class="btn ghost" id="mwebcal">Apple Calendar</a>
-    <button class="btn ghost" id="mcopy" type="button">Copy .ics link</button>
+    <button class="modal-close" id="addClose" aria-label="Close">×</button>
+    <h3 id="add-h">Add event</h3>
+    <p class="sub-text">Saved on this device. Shows alongside your CMS events.</p>
+
+    <div class="form-field">
+      <label for="ev-title">Title</label>
+      <input type="text" id="ev-title" placeholder="e.g. Study session, Office hours…" autocomplete="off">
+      <div class="form-err" id="ev-title-err">Please enter a title.</div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="ev-date">Date</label>
+        <input type="date" id="ev-date">
+        <div class="form-err" id="ev-date-err">Please pick a date.</div>
+      </div>
+      <div class="form-field">
+        <label for="ev-time">Time <span style="font-weight:400;color:var(--ink-3)">(optional)</span></label>
+        <input type="time" id="ev-time">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="ev-kind">Type</label>
+        <select id="ev-kind">
+          <option value="quiz">Quiz</option>
+          <option value="exam">Exam</option>
+          <option value="assignment">Assignment</option>
+          <option value="project">Project</option>
+          <option value="lab">Lab</option>
+          <option value="deadline">Deadline</option>
+          <option value="info" selected>Other</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="ev-course">Course <span style="font-weight:400;color:var(--ink-3)">(optional)</span></label>
+        <select id="ev-course"></select>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="ev-note">Note <span style="font-weight:400;color:var(--ink-3)">(optional)</span></label>
+      <textarea id="ev-note" placeholder="Any extra details…"></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn ghost" id="addCancel" type="button">Cancel</button>
+      <button class="btn" id="addSave" type="button">Save event</button>
+    </div>
   </div>
 </div>
 
 <script>
 const PALETTE=["#4F46E5","#EF4444","#10B981","#8B5CF6","#F59E0B","#0EA5E9","#EC4899","#84CC16","#F97316"];
 const KIND={
-  quiz:     ["Quiz",       "#EF4444"],
-  exam:     ["Exam",       "#8B5CF6"],
-  assignment:["Assignment","#3B82F6"],
-  project:  ["Project",    "#D97706"],
-  deadline: ["Deadline",   "#3B82F6"],
-  lab:      ["Lab",        "#10B981"],
-  cancelled:["Cancelled",  "#9CA3AF"],
-  info:     ["Note",       "#9CA3AF"],
+  quiz:      ["Quiz",       "#EF4444"],
+  exam:      ["Exam",       "#8B5CF6"],
+  assignment:["Assignment", "#3B82F6"],
+  project:   ["Project",    "#D97706"],
+  deadline:  ["Deadline",   "#3B82F6"],
+  lab:       ["Lab",        "#10B981"],
+  cancelled: ["Cancelled",  "#9CA3AF"],
+  info:      ["Note",       "#9CA3AF"],
+  custom:    ["Custom",     "#4F46E5"],
 };
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let D,color={},hidden=new Set(),hiddenKinds=new Set(),view;
+let D,color={},hidden=new Set(),hiddenKinds=new Set(),view,customEvents=[];
 
 function store(k,v){try{v===undefined?null:localStorage.setItem(k,JSON.stringify(v));return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
@@ -298,9 +367,7 @@ const today=()=>{const t=new Date();return new Date(t.getFullYear(),t.getMonth()
 function rel(ds){const n=Math.round((parse(ds)-today())/864e5);
   return n===0?"today":n===1?"tomorrow":n===-1?"yesterday":n>0?`in ${n} days`:`${-n} days ago`}
 const visible=e=>!hidden.has(e.course)&&!hiddenKinds.has(e.kind);
-const needsCheck=e=>e.flags&&e.flags.length&&!(e.by&&e.by.length===2);
-
-// Shorten a course name for the filter chip
+const needsCheck=e=>!e.custom&&e.flags&&e.flags.length&&!(e.by&&e.by.length===2);
 function shortName(name){
   if(name.length<=20)return name;
   const skip=new Set(["and","the","for","of","in","a","an","&"]);
@@ -309,19 +376,43 @@ function shortName(name){
   return s.length<=20?s:s.slice(0,18)+"…";
 }
 
+// ── Custom events ────────────────────────────────────────────────────────────
+function loadCustomEvents(){
+  customEvents=store("customEvents")||[];
+}
+function saveCustomEvents(){
+  store("customEvents",customEvents);
+}
+function deleteCustomEvent(id){
+  customEvents=customEvents.filter(e=>e.id!==id);
+  saveCustomEvents();
+  renderAll();
+}
+function allEvents(){
+  // Merge CMS events + custom events into one sorted array
+  const cms=D?D.events:[];
+  return [...cms,...customEvents].sort((a,b)=>{
+    if(a.date!==b.date)return a.date<b.date?-1:1;
+    return(a.time||"99:99")<(b.time||"99:99")?-1:1;
+  });
+}
+
+// ── Load ─────────────────────────────────────────────────────────────────────
 async function load(){
+  loadCustomEvents();
   try{const r=await fetch("events.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;D=await r.json()}
   catch(e){D=window.__EMBED__||null}
-  if(!D){$("#meta").textContent="No data yet. The robot hasn't run its first scan.";return}
+  if(!D){$("#meta").textContent="No data yet. The robot hasn't run its first scan.";renderAll();return}
   D.courses.forEach((c,i)=>color[c.code]=PALETTE[i%PALETTE.length]);
   hidden=new Set(store("hidden")||[]);
   hiddenKinds=new Set(store("hiddenKinds")||[]);
   view=startMonth();
   renderMeta();renderLegend();renderKindFilters();renderFilters();renderAll();setupSub();
+  populateCourseSelect();
 }
 function startMonth(){const t=today(),v=new Date(t.getFullYear(),t.getMonth(),1);
   const last=new Date(t.getFullYear(),t.getMonth()+1,0).getDate();if(last-t.getDate()<7)v.setMonth(v.getMonth()+1);return v}
-function renderAll(){renderStrip();renderList();renderMonth();renderFeed()}
+function renderAll(){renderStrip();renderList();renderMonth();if(D)renderFeed()}
 
 function renderMeta(){
   const g=new Date(D.generated_at);
@@ -332,20 +423,19 @@ function renderMeta(){
   if(ago>=30)a.push("No scan in over a day. Is your laptop on? If your GUC password changed, run: python scraper/scan.py --save-login");
   if(D.preview)a.push(D.preview);
   $("#alerts").innerHTML=a.map(x=>`<p class="alert">${esc(x)}</p>`).join("");
-  $("#foot").innerHTML=`${D.events.length} events across ${D.courses.length} courses${D.ai_check?" · AI double-check enabled":""}`;
+  $("#foot").innerHTML=`${D.events.length} CMS events + ${customEvents.length} custom across ${D.courses.length} courses${D.ai_check?" · AI double-check enabled":""}`;
 }
 
 function renderLegend(){
   const items=[
-    {k:"quiz",    label:"Quiz",        color:"#EF4444"},
-    {k:"exam",    label:"Exam",        color:"#8B5CF6"},
-    {k:"assignment",label:"Assignment",color:"#3B82F6"},
-    {k:"project", label:"Project",     color:"#D97706"},
-    {k:"lab",     label:"Lab",         color:"#10B981"},
-    {k:"cancelled",label:"Cancelled",  color:"#9CA3AF"},
+    {k:"quiz",label:"Quiz",color:"#EF4444"},{k:"exam",label:"Exam",color:"#8B5CF6"},
+    {k:"assignment",label:"Assignment",color:"#3B82F6"},{k:"project",label:"Project",color:"#D97706"},
+    {k:"lab",label:"Lab",color:"#10B981"},{k:"cancelled",label:"Cancelled",color:"#9CA3AF"},
+    {k:"custom",label:"My events",color:"#4F46E5"},
   ];
-  const present=new Set(D.events.map(e=>e.kind));
-  const hasCheck=D.events.some(needsCheck);
+  const evs=allEvents();
+  const present=new Set(evs.map(e=>e.custom?"custom":e.kind));
+  const hasCheck=evs.some(needsCheck);
   let html=items.filter(x=>present.has(x.k)).map(x=>
     `<span class="legend-item" style="--c:${x.color}"><span></span>${x.label}</span>`
   ).join("");
@@ -355,22 +445,20 @@ function renderLegend(){
 
 function renderKindFilters(){
   const kindOrder=["quiz","exam","assignment","project","lab","cancelled","info"];
-  const present=kindOrder.filter(k=>D.events.some(e=>e.kind===k));
+  const present=kindOrder.filter(k=>D&&D.events.some(e=>e.kind===k));
   $("#kindFilters").innerHTML=present.map(k=>{
     const[label,color]=KIND[k]||KIND.info;
     return `<button class="chip" type="button" style="--c:${color}" aria-pressed="${!hiddenKinds.has(k)}" data-kind="${k}"><i></i>${label}</button>`;
   }).join("");
   $("#kindFilters").onclick=e=>{
     const b=e.target.closest(".chip");if(!b)return;
-    const k=b.dataset.kind;
-    hiddenKinds.has(k)?hiddenKinds.delete(k):hiddenKinds.add(k);
-    store("hiddenKinds",[...hiddenKinds]);
-    b.setAttribute("aria-pressed",!hiddenKinds.has(k));
-    renderAll();
+    const k=b.dataset.kind;hiddenKinds.has(k)?hiddenKinds.delete(k):hiddenKinds.add(k);
+    store("hiddenKinds",[...hiddenKinds]);b.setAttribute("aria-pressed",!hiddenKinds.has(k));renderAll();
   };
 }
 
 function renderFilters(){
+  if(!D)return;
   $("#filters").innerHTML=D.courses.map(c=>
     `<button class="chip" type="button" style="--c:${color[c.code]}" aria-pressed="${!hidden.has(c.code)}" data-c="${esc(c.code)}" title="${esc(c.name)}"><i></i>${esc(shortName(c.name))}</button>`
   ).join("");
@@ -381,27 +469,39 @@ function renderFilters(){
 
 function renderStrip(){
   const t=today(),end=addDays(t,13),out=[];
-  const evs=D.events.filter(visible);
+  const evs=allEvents().filter(visible);
   const n=evs.filter(e=>e.kind!=="cancelled"&&e.kind!=="info"&&parse(e.date)>=t&&parse(e.date)<=end).length;
   $("#rw-sub").textContent=n?`${n} thing${n>1?"s":""} due`:"Nothing due — enjoy it";
   for(let i=0;i<14;i++){
     const d=addDays(t,i),ds=iso(d),list=evs.filter(e=>e.date===ds);
     const wk=d.getDay()===5||d.getDay()===6;
     out.push(`<div class="day${i===0?" today":""}${wk?" wkend":""}"><div class="dn">${i===0?"Today":d.toLocaleDateString([],{weekday:"short"})}</div><div class="dd">${d.getDate()}</div>${
-      list.map(e=>`<button class="pill ${e.kind}${i<=2&&!["cancelled","info"].includes(e.kind)?" hot":""}" style="--c:${(KIND[e.kind]||KIND.info)[1]}" data-id="${e.id}">${esc(e.title)}<small>${esc(e.course)}${e.time?" · "+fmtTime(e.time):""}</small></button>`).join("")}</div>`)
+      list.map(e=>{const ec=e.custom?"#4F46E5":(KIND[e.kind]||KIND.info)[1];
+        return `<button class="pill ${e.kind}${i<=2&&!["cancelled","info"].includes(e.kind)?" hot":""}" style="--c:${ec}" data-id="${e.id}">${esc(e.title)}<small>${esc(e.course||"My event")}${e.time?" · "+fmtTime(e.time):""}</small></button>`}).join("")}</div>`)
   }
   $("#strip").innerHTML=out.join("");
 }
 
 function evHTML(e){
-  const[kl,kc]=KIND[e.kind]||KIND.info;
+  const ec=e.custom?"#4F46E5":(KIND[e.kind]||KIND.info)[1];
+  const[kl]=KIND[e.kind]||KIND.info;
   const when=e.time?fmtTime(e.time):"";
-  return `<details class="ev ${e.kind}" id="ev-${e.id}" style="--c:${(KIND[e.kind]||KIND.info)[1]}">
-   <summary><span class="t"><span class="kind" style="--k:${kc}">${kl}</span>${esc(e.title)}${needsCheck(e)?'<span class="check">Double-check</span>':""}</span>
+  const badge=e.custom
+    ?`<span class="kind custom-badge">My event</span>`
+    :`<span class="kind" style="--k:${ec}">${kl}</span>`;
+  const courseStr=e.custom
+    ?(e.course_name||"Personal")
+    :`${esc(e.course_name)}${e.where?" · "+esc(e.where):""}`;
+  const more=e.custom
+    ?`${e.text?`<p style="margin-bottom:8px">${esc(e.text)}</p>`:""}
+       <button class="delete-btn" data-del="${e.id}">Delete event</button>`
+    :`${needsCheck(e)?`<p class="fl">${e.flags.map(esc).join(". ")}.</p>`:""}
+       <q>${esc(e.text)}</q><a href="${esc(e.url)}" target="_blank" rel="noopener">Open on CMS →</a> <span style="color:var(--ink-3)">· ${esc(e.source)}</span>`;
+  return `<details class="ev ${e.kind}" id="ev-${e.id}" style="--c:${ec}">
+   <summary><span class="t">${badge}${esc(e.title)}${needsCheck(e)?'<span class="check">Double-check</span>':""}</span>
    <span class="when">${when}</span>
-   <span class="c">${esc(e.course_name)}${e.where?" · "+esc(e.where):""}</span></summary>
-   <div class="more">${needsCheck(e)?`<p class="fl">${e.flags.map(esc).join(". ")}.</p>`:""}
-   <q>${esc(e.text)}</q><a href="${esc(e.url)}" target="_blank" rel="noopener">Open on CMS →</a> <span style="color:var(--ink-3)">· ${esc(e.source)}</span></div></details>`;
+   <span class="c">${courseStr}</span></summary>
+   <div class="more">${more}</div></details>`;
 }
 function groupHTML(evs){
   const by={};evs.forEach(e=>(by[e.date]=by[e.date]||[]).push(e));
@@ -409,35 +509,38 @@ function groupHTML(evs){
     return `<div class="dgroup"><p class="dlabel${n>=0&&n<=3?" soon":""}">${d.toLocaleDateString([],{weekday:"long",day:"numeric",month:"short"})}<span class="rel">${rel(ds)}</span></p>${by[ds].map(evHTML).join("")}</div>`}).join("");
 }
 function renderList(){
-  const t=iso(today()),evs=D.events.filter(visible);
+  const t=iso(today()),evs=allEvents().filter(visible);
   const up=evs.filter(e=>e.date>=t),past=evs.filter(e=>e.date<t).reverse();
-  $("#list").innerHTML=up.length?groupHTML(up):`<p class="empty">Nothing announced yet. Scans run twice a day.</p>`;
+  $("#list").innerHTML=up.length?groupHTML(up):`<p class="empty">Nothing coming up. Add an event with the + button!</p>`;
   $("#past").innerHTML=past.length?groupHTML(past):`<p class="empty">No past events yet.</p>`;
 }
 
 function renderMonth(){
+  if(!view)return;
   const y=view.getFullYear(),m=view.getMonth();
   $("#m-h").textContent=view.toLocaleDateString([],{month:"long",year:"numeric"});
   const start=addDays(view,-((view.getDay()+1)%7));
   const names=[];for(let i=0;i<7;i++)names.push(addDays(start,i).toLocaleDateString([],{weekday:"short"}));
-  const evs=D.events.filter(visible),t=iso(today());let h=names.map(n=>`<div class="wd">${n}</div>`).join("");
+  const evs=allEvents().filter(visible),t=iso(today());
+  let h=names.map(n=>`<div class="wd">${n}</div>`).join("");
   for(let i=0;i<42;i++){
     const d=addDays(start,i),ds=iso(d);
     if(i===35&&d.getMonth()!==m)break;
     const list=evs.filter(e=>e.date===ds);
-    h+=`<div class="cell${d.getMonth()!==m?" out":""}${ds===t?" today":""}"><span class="n">${d.getDate()}</span>${list.map(e=>`<button class="mev ${e.kind}" style="--c:${(KIND[e.kind]||KIND.info)[1]}" data-id="${e.id}" title="${esc(e.course+" "+e.title)}">${esc(e.title)}</button>`).join("")}</div>`;
+    h+=`<div class="cell${d.getMonth()!==m?" out":""}${ds===t?" today":""}"><span class="n">${d.getDate()}</span>${list.map(e=>{const ec=e.custom?"#4F46E5":(KIND[e.kind]||KIND.info)[1];return `<button class="mev ${e.kind}" style="--c:${ec}" data-id="${e.id}" title="${esc((e.course||"My event")+" "+e.title)}">${esc(e.title)}</button>`}).join("")}</div>`;
   }
   $("#month").innerHTML=h;
 }
 
 function renderFeed(){
+  if(!D)return;
   const items=D.items.filter(i=>visible(i)).slice(0,14),g=new Date(D.generated_at);
   $("#feed").innerHTML=items.length?items.map(i=>{const isNew=i.first_seen>(D.first_scan||"")&&(g-new Date(i.first_seen))<3*864e5;
     return `<li style="--c:${color[i.course]}"><span class="code">${esc(i.course)}</span><span>${i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>`:esc(i.title)}${isNew?'<span class="new">New</span>':""}<br><span class="ty">${esc(i.type)}</span></span><span class="ty">${i.week?parse(i.week).toLocaleDateString([],{day:"numeric",month:"short"}):""}</span></li>`}).join(""):`<p class="empty">No files posted yet.</p>`;
 }
 
 function openEvent(id){
-  const t=iso(today()),e=D.events.find(x=>x.id===id);if(!e)return;
+  const t=iso(today()),e=allEvents().find(x=>x.id===id);if(!e)return;
   if(e.date<t&&$("#past").hidden)togglePast();
   const el=document.getElementById("ev-"+id);if(!el)return;
   el.open=true;el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"center"});
@@ -445,28 +548,84 @@ function openEvent(id){
 function togglePast(){const p=$("#past");p.hidden=!p.hidden;$("#pastBtn").textContent=p.hidden?"Show past events":"Hide past events"}
 
 function setupSub(){
+  if(!D)return;
   if(window.__EMBED__&&D===window.__EMBED__){$("#subPanel").hidden=true;document.querySelector(".lower").style.gridTemplateColumns="1fr";return}
   const u=new URL("calendar.ics",location.href).href;
   const w=u.replace(/^https?:/,"webcal:");
-  // Bottom panel
   $("#icsUrl").textContent=u;
   $("#gcal").href="https://calendar.google.com/calendar/render?cid="+encodeURIComponent(w);
   $("#webcal").href=w;
   $("#copy").onclick=async()=>{try{await navigator.clipboard.writeText(u);$("#copy").textContent="Copied!"}catch(e){$("#copy").textContent="Select the link above"}};
-  // Modal
-  $("#mgcal").href=$("#gcal").href;
-  $("#mwebcal").href=w;
-  $("#mcopy").onclick=async()=>{try{await navigator.clipboard.writeText(u);$("#mcopy").textContent="Copied!"}catch(e){$("#mcopy").textContent="Select the link above"}};
 }
 
-// Modal open/close
-function openModal(){$("#modalBg").classList.add("open")}
-function closeModal(){$("#modalBg").classList.remove("open")}
-$("#fabBtn").onclick=openModal;
-$("#modalClose").onclick=closeModal;
-$("#modalBg").onclick=e=>{if(e.target===$("#modalBg"))closeModal()};
+// ── Add event modal ───────────────────────────────────────────────────────────
+function populateCourseSelect(){
+  const sel=$("#ev-course");
+  const courses=D?D.courses:[];
+  sel.innerHTML=`<option value="">— none —</option>`+courses.map(c=>
+    `<option value="${esc(c.code)}" data-name="${esc(c.name)}">${esc(shortName(c.name))}</option>`
+  ).join("")+`<option value="__custom__">Other…</option>`;
+}
+function openAddModal(){
+  // Default date to today
+  const t=iso(today());
+  $("#ev-date").value=t;
+  $("#ev-title").value="";
+  $("#ev-time").value="";
+  $("#ev-kind").value="info";
+  $("#ev-note").value="";
+  $("#ev-title-err").style.display="none";
+  $("#ev-date-err").style.display="none";
+  $("#addModal").classList.add("open");
+  setTimeout(()=>$("#ev-title").focus(),300);
+}
+function closeAddModal(){$("#addModal").classList.remove("open")}
 
-document.addEventListener("click",e=>{const b=e.target.closest("[data-id]");if(b)openEvent(b.dataset.id)});
+$("#fabBtn").onclick=openAddModal;
+$("#addClose").onclick=closeAddModal;
+$("#addCancel").onclick=closeAddModal;
+$("#addModal").onclick=e=>{if(e.target===$("#addModal"))closeAddModal()};
+
+$("#addSave").onclick=()=>{
+  const title=$("#ev-title").value.trim();
+  const date=$("#ev-date").value;
+  let valid=true;
+  if(!title){$("#ev-title-err").style.display="block";valid=false}else{$("#ev-title-err").style.display="none"}
+  if(!date){$("#ev-date-err").style.display="block";valid=false}else{$("#ev-date-err").style.display="none"}
+  if(!valid)return;
+
+  const sel=$("#ev-course");
+  const selectedOpt=sel.options[sel.selectedIndex];
+  const courseCode=sel.value==="__custom__"?"":sel.value;
+  const courseName=courseCode?(selectedOpt.dataset.name||courseCode):"";
+
+  const ev={
+    id:"custom-"+Date.now(),
+    custom:true,
+    date,
+    time:$("#ev-time").value||null,
+    kind:$("#ev-kind").value,
+    title,
+    course:courseCode,
+    course_name:courseName,
+    text:$("#ev-note").value.trim(),
+    flags:[],by:["custom"],
+  };
+  customEvents.push(ev);
+  saveCustomEvents();
+  closeAddModal();
+  renderAll();
+  if(D)renderMeta();
+  if(D)renderLegend();
+};
+
+// ── Event delegation ──────────────────────────────────────────────────────────
+document.addEventListener("click",e=>{
+  const del=e.target.closest("[data-del]");
+  if(del){deleteCustomEvent(del.dataset.del);return}
+  const b=e.target.closest("[data-id]");
+  if(b)openEvent(b.dataset.id);
+});
 $("#pastBtn").onclick=togglePast;
 $("#prev").onclick=()=>{view.setMonth(view.getMonth()-1);renderMonth()};
 $("#next").onclick=()=>{view.setMonth(view.getMonth()+1);renderMonth()};
