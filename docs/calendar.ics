@@ -1,0 +1,183 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//guc-deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GUC deadlines
+X-WR-TIMEZONE:Africa/Cairo
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:3f3926a0ca19@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART:20260924T205900Z
+DURATION:PT30M
+SUMMARY:[EDPT1009] Deadline
+DESCRIPTION:- The robot selection deadline is next Thursday 24th of Septem
+ ber at 11:59 pm.\n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.asp
+ x?id=747&sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Deadline
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f2b7d2f8b551@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART:20260928T130000Z
+DURATION:PT60M
+SUMMARY:[EDPT903] Quiz 1
+DESCRIPTION:This is to inform you that quiz 1 will be held on Monday\, 28t
+ h of September 2026 \, from 4:00 PM to 5:00 PM \, in D1.001\,D1.002 and D
+ 1.003\n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&si
+ d=70
+LOCATION:D1.001\, D1.002\, D1.003
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quiz 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a296a902ab2f@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:[MATH301] Quiz 1
+DESCRIPTION:Quiz 1 will be held next Monday Sept 28 th and Tuesday Sept 29
+  th \, 3:30-5:15.\n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.as
+ px?id=45&sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quiz 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:82f8f7c173ce@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:[MATH301] Monday Sept 28 th
+DESCRIPTION:Monday Sept 28 th\n\nhttps://cms.guc.edu.eg/apps/student/Cours
+ eViewStn.aspx?id=45&sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70
+END:VEVENT
+BEGIN:VEVENT
+UID:a6ce19dc05fa@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART:20260929T123000Z
+DURATION:PT60M
+SUMMARY:[MATH301] Quiz 1
+DESCRIPTION:Quiz 1 will be held next Monday Sept 28 th and Tuesday Sept 29
+  th \, 3:30-5:15.\n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.as
+ px?id=45&sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quiz 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0c8b9e3fdd2d@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:[MATH301] Tuesday Sept 29 th
+DESCRIPTION:Tuesday Sept 29 th\n\nhttps://cms.guc.edu.eg/apps/student/Cour
+ seViewStn.aspx?id=45&sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70
+END:VEVENT
+BEGIN:VEVENT
+UID:136de54343b6@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:[EDPT1009] Project deadline
+DESCRIPTION:The deadline of the milestone is on Thursday 1st of October 20
+ 26.\n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=
+ 70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Project deadline
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:658c7851b175@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:[ELCT708] No lecture
+DESCRIPTION:There will be no lecture on Monday 5th of October.\n\nhttps://
+ cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:84c77ead103b@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:[MCTR702] 📅 Date: Saturday\, 10 October 2026
+DESCRIPTION:📅 Date: Saturday\, 10 October 2026\n\nhttps://cms.guc.edu.e
+ g/apps/student/CourseViewStn.aspx?id=725&sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70
+END:VEVENT
+BEGIN:VEVENT
+UID:c8518e446e1c@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART:20261012T124500Z
+DURATION:PT60M
+SUMMARY:[ELCT708] Quiz 1
+DESCRIPTION:Quiz 1 will be on Monday 12th of October at 3:45 pm in D1.001 
+ - D1.002 - D1.003.\n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.a
+ spx?id=723&sid=70
+LOCATION:D1.001\, D1.002\, D1.003
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quiz 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b216edd7d8a6@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:[ELCT708] Assignment 1 due
+DESCRIPTION:Assignment 1 is available on the CMS and is due on Monday 12/1
+ 0/2026.\n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&
+ sid=70
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Assignment 1 due
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7bf61b9e9971@guc-deadlines
+DTSTAMP:20260930T142909Z
+DTSTART:20261030T134500Z
+DURATION:PT60M
+SUMMARY:⚠ [ELCT704] Quiz 1
+DESCRIPTION:- Quiz 1 will be on Wednesday 30th of October at 3:45 pm in D1
+ .001\, D1.002 and D1.003\n\nCheck: says Wednesday but 30 Oct is a Friday\
+ n\nhttps://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70
+LOCATION:D1.001\, D1.002\, D1.003
+URL:https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quiz 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
