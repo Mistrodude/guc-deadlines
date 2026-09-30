@@ -357,14 +357,20 @@ def make_title(kind, sentence):
 
 def rule_events(units, ref, source):
     out = []
-    for sent in units:
+    for idx, sent in enumerate(units):
         hits = find_dates(sent, ref)
         for i, (d, s, e, flags) in enumerate(hits):
             seg_end = hits[i + 1][1] if i + 1 < len(hits) else len(sent)
             kind = classify(sent)
+            # If this sentence has no event keyword, borrow context from the previous
+            # sentence (handles "Quiz 1 will take place on:\n📅 Date: Saturday...")
+            ctx = sent
+            if kind == "info" and idx > 0:
+                ctx = units[idx - 1] + " " + sent
+                kind = classify(ctx)
             out.append({
                 "date": d.isoformat(), "time": find_time(sent[:seg_end], s),
-                "kind": kind, "title": make_title(kind, sent),
+                "kind": kind, "title": make_title(kind, ctx),
                 "where": ", ".join(dict.fromkeys(RX_ROOM.findall(sent))) or None,
                 "text": sent, "source": source, "flags": flags, "by": ["rules"],
             })
