@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-30T17:46+03:00",
+ "generated_at": "2026-10-02T17:08+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-09-30",
+ "today": "2026-10-02",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -303,6 +303,26 @@
    "url": "/Uploads/70/308/72448/GUC_308_70_72448_2026-09-30T16_10_16.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "ELCT708-278580",
+   "course": "ELCT708",
+   "title": "Sheet 3",
+   "type": "Tutorial notes",
+   "week": "2026-09-26",
+   "url": "/Uploads/70/723/72269/GUC_723_70_72269_2026-09-30T17_50_47.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-10-02T17:08+03:00"
+  },
+  {
+   "id": "ELCT708-278581",
+   "course": "ELCT708",
+   "title": "Sheet 3 Solution",
+   "type": "Tutorial notes",
+   "week": "2026-09-26",
+   "url": "/Uploads/70/723/72269/GUC_723_70_72269_2026-09-30T17_51_09.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-10-02T17:08+03:00"
   },
   {
    "id": "HUMA901-272252",
@@ -1275,6 +1295,26 @@
    "first_seen": "2026-09-30T17:28+03:00"
   },
   {
+   "id": "EDPT1009-278860",
+   "course": "EDPT1009",
+   "title": "Tutorial (03) Forward Kinematics",
+   "type": "Tutorial notes",
+   "week": "2026-09-06",
+   "url": "/Uploads/70/747/71034/GUC_747_70_71034_2026-10-02T16_55_31.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-02T17:08+03:00"
+  },
+  {
+   "id": "EDPT1009-278861",
+   "course": "EDPT1009",
+   "title": "Forward Kinematics extra problems",
+   "type": "Other",
+   "week": "2026-09-06",
+   "url": "/Uploads/70/747/71034/GUC_747_70_71034_2026-10-02T16_56_18.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-02T17:08+03:00"
+  },
+  {
    "id": "EDPT1009-273805",
    "course": "EDPT1009",
    "title": "Tutorial 1 - Introduction",
@@ -1303,6 +1343,16 @@
    "url": "/Uploads/70/747/71034/GUC_747_70_71034_2026-09-24T17_58_04.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-278600",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L04_Inverse Position Kinematics-VoD",
+   "type": "VoD",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71588/GUC_747_70_71588_2026-10-01T08_20_27.mp4",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-02T17:08+03:00"
   },
   {
    "id": "HUMA901-272249",
