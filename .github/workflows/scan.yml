@@ -1,0 +1,37 @@
+name: Scan CMS
+
+on:
+  schedule:
+    - cron: '0 5 * * *'    # 08:00 Cairo (UTC+3)
+    - cron: '0 15 * * *'   # 18:00 Cairo (UTC+3)
+  workflow_dispatch:         # manual trigger button in GitHub UI
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run CMS scan
+        env:
+          GUC_USERNAME: ${{ secrets.GUC_USERNAME }}
+          GUC_PASSWORD: ${{ secrets.GUC_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scraper/scan.py
+
+      - name: Commit and push updated site
+        run: |
+          git config user.name "GUC Deadlines Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet && echo "No changes" || (git commit -m "CMS scan $(date -u '+%Y-%m-%d %H:%M UTC')" && git push)
