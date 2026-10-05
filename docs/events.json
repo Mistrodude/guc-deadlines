@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-05T15:11+03:00",
+ "generated_at": "2026-10-06T00:53+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-05",
+ "today": "2026-10-06",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -314,6 +314,66 @@
  ],
  "items": [
   {
+   "id": "MATH301-271471",
+   "course": "MATH301",
+   "title": "Lecture 9",
+   "type": "Lecture notes",
+   "week": "2026-10-03",
+   "url": "/Uploads/64/45/46269/GUC_45_64_46269_2024-09-16T09_51_14.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
+   "id": "MATH301-271472",
+   "course": "MATH301",
+   "title": "Lecture 10",
+   "type": "Lecture notes",
+   "week": "2026-10-03",
+   "url": "/Uploads/64/45/46269/GUC_45_64_46269_2024-09-16T09_51_35.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
+   "id": "MATH301-271473",
+   "course": "MATH301",
+   "title": "Worksheet 5",
+   "type": "Exercise",
+   "week": "2026-10-03",
+   "url": "/Uploads/64/45/46269/GUC_45_64_46269_2024-09-16T09_52_17.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
+   "id": "MATH301-271474",
+   "course": "MATH301",
+   "title": "Solution of Worksheet 5",
+   "type": "Exercise",
+   "week": "2026-10-03",
+   "url": "/Uploads/64/45/46269/GUC_45_64_46269_2024-09-16T09_52_38.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
+   "id": "MATH301-271475",
+   "course": "MATH301",
+   "title": "Tutorial 9 VOD",
+   "type": "VoD",
+   "week": "2026-10-03",
+   "url": "/Uploads/52/45/368/GUC_45_52_368_2020-11-05T15_27_06.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
+   "id": "MATH301-271476",
+   "course": "MATH301",
+   "title": "Tutorial 10 VOD",
+   "type": "VoD",
+   "week": "2026-10-03",
+   "url": "/Uploads/52/45/368/GUC_45_52_368_2020-11-05T15_47_17.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
    "id": "ELCT704-278568",
    "course": "ELCT704",
    "title": "Lecture 5",
@@ -322,6 +382,26 @@
    "url": "/Uploads/70/308/72448/GUC_308_70_72448_2026-09-30T16_10_16.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "MATH301-271469",
+   "course": "MATH301",
+   "title": "Tutorial 7 VOD",
+   "type": "VoD",
+   "week": "2026-09-26",
+   "url": "/Uploads/52/45/248/GUC_45_52_248_2020-10-25T10_58_44.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
+   "id": "MATH301-271470",
+   "course": "MATH301",
+   "title": "Tutorial 8 VOD",
+   "type": "VoD",
+   "week": "2026-09-26",
+   "url": "/Uploads/52/45/248/GUC_45_52_248_2020-11-03T15_09_12.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
   },
   {
    "id": "ELCT708-278580",
@@ -652,6 +732,16 @@
    "url": "/Uploads/70/725/71826/GUC_725_70_71826_2026-09-22T12_20_53.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT903-279464",
+   "course": "EDPT903",
+   "title": "Project Description and Registration Form",
+   "type": "Project",
+   "week": "2026-09-13",
+   "url": "/Uploads/70/570/70986/GUC_570_70_70986_2026-10-05T18_53_03.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
   },
   {
    "id": "EDPT903-273640",
@@ -1174,6 +1264,26 @@
    "first_seen": "2026-09-30T17:28+03:00"
   },
   {
+   "id": "EDPT1009-279390",
+   "course": "EDPT1009",
+   "title": "EDPT1009 Robotics RED Milestone 01 Description",
+   "type": "Supplementary notes",
+   "week": "2026-09-08",
+   "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-10-05T15_55_29.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
+   "id": "EDPT1009-279393",
+   "course": "EDPT1009",
+   "title": "Updated RED Milestones Requirements",
+   "type": "Supplementary notes",
+   "week": "2026-09-08",
+   "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-10-05T16_01_46.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
+  },
+  {
    "id": "EDPT1009-273807",
    "course": "EDPT1009",
    "title": "RED List of Robots",
@@ -1190,16 +1300,6 @@
    "type": "Supplementary notes",
    "week": "2026-09-08",
    "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-09-13T18_29_33.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
-   "first_seen": "2026-09-30T17:28+03:00"
-  },
-  {
-   "id": "EDPT1009-275267",
-   "course": "EDPT1009",
-   "title": "Updated RED Milestones Requirments",
-   "type": "Supplementary notes",
-   "week": "2026-09-08",
-   "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-09-17T09_43_11.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
   },
@@ -1232,6 +1332,16 @@
    "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-09-28T15_24_09.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-279389",
+   "course": "EDPT1009",
+   "title": "EDPT1009 Robotics Project Milestone 02 Description",
+   "type": "Project",
+   "week": "2026-09-07",
+   "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-10-05T15_52_21.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-06T00:53+03:00"
   },
   {
    "id": "EDPT1009-273828",
