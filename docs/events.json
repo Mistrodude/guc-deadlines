@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-04T21:33+03:00",
+ "generated_at": "2026-10-05T15:11+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-04",
+ "today": "2026-10-05",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -250,6 +250,25 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
    "id": "c8518e446e1c",
    "first_seen": "2026-09-30T17:28+03:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-10-12",
+   "time": null,
+   "kind": "assignment",
+   "title": "Assignment due",
+   "where": null,
+   "text": "Please note that the first in class assignment will be next week (starting Monday 12/10/2026) during the tutorial.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "EDPT903",
+   "course_name": "Machine Design",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "id": "d2691cd89996",
+   "first_seen": "2026-10-05T15:11+03:00",
    "flags_serious": false
   },
   {
