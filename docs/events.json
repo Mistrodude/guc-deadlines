@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T14:39+03:00",
+ "generated_at": "2026-10-07T23:29+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-10-07",
  "season": "Winter 2026",
@@ -212,6 +212,25 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
    "id": "658c7851b175",
    "first_seen": "2026-09-30T17:28+03:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-10-08",
+   "time": null,
+   "kind": "info",
+   "title": "For tutorial groups held on Thursday 8/10 (T4, T31, T32, T35, T37, T38…",
+   "where": null,
+   "text": "For tutorial groups held on Thursday 8/10 (T4, T31, T32, T35, T37, T38).",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT704",
+   "course_name": "Power Electronics",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "id": "f01e08ae41f0",
+   "first_seen": "2026-10-07T23:29+03:00",
    "flags_serious": false
   },
   {
