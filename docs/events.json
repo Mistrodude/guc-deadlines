@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-08T23:33+03:00",
+ "generated_at": "2026-10-09T14:46+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-08",
+ "today": "2026-10-09",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -351,6 +351,86 @@
   }
  ],
  "items": [
+  {
+   "id": "MATH301-271528",
+   "course": "MATH301",
+   "title": "Midterm 2022",
+   "type": "Exam",
+   "week": "2026-10-19",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-10-16T16_36_45.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-271529",
+   "course": "MATH301",
+   "title": "Midterm 2022 solution",
+   "type": "Exam solution",
+   "week": "2026-10-19",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-10-16T16_37_22.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-271530",
+   "course": "MATH301",
+   "title": "Midterm 2023",
+   "type": "Exam",
+   "week": "2026-10-19",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-10-16T16_37_50.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-271531",
+   "course": "MATH301",
+   "title": "Midterm 2023 solution",
+   "type": "Exam solution",
+   "week": "2026-10-19",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-10-16T16_39_08.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-271532",
+   "course": "MATH301",
+   "title": "Midterm 2024",
+   "type": "Exam",
+   "week": "2026-10-19",
+   "url": "/Uploads/67/45/57860/GUC_45_67_57860_2025-10-20T10_39_16.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-271533",
+   "course": "MATH301",
+   "title": "Midterm 2024 solution",
+   "type": "Exam",
+   "week": "2026-10-19",
+   "url": "/Uploads/67/45/57860/GUC_45_67_57860_2025-10-20T10_44_39.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-280210",
+   "course": "MATH301",
+   "title": "Midterm 2025",
+   "type": "Exam",
+   "week": "2026-10-19",
+   "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-10-08T23_48_52.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-280211",
+   "course": "MATH301",
+   "title": "Midterm 2025 solution",
+   "type": "Exam solution",
+   "week": "2026-10-19",
+   "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-10-08T23_49_23.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T14:46+03:00"
+  },
   {
    "id": "HUMA901-272253",
    "course": "HUMA901",
