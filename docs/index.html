@@ -130,6 +130,7 @@ details.ev summary::-webkit-details-marker{display:none}
 .delete-btn{background:none;border:1px solid #FCA5A5;color:#EF4444;border-radius:7px;
   padding:5px 12px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
 .delete-btn:hover{background:#FEF2F2}
+.sync-badge{font-size:12px;color:var(--accent);background:none;border:0;cursor:pointer;padding:0;text-decoration:underline;font-family:inherit}
 .empty{color:var(--ink-3);font-size:15px;padding:12px 2px}
 .toggle-past{background:none;border:0;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;padding:8px 0 0}
 
@@ -285,12 +286,36 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
 <!-- FAB -->
 <button class="fab" id="fabBtn">+ Add Event</button>
 
+<!-- Sync Modal -->
+<div class="modal-bg" id="syncModal" role="dialog" aria-modal="true" aria-labelledby="sync-h">
+  <div class="modal">
+    <button class="modal-close" id="syncClose" aria-label="Close">×</button>
+    <h3 id="sync-h">Sync across devices</h3>
+    <p class="sub-text">Custom events will be saved to your GitHub repo and appear on every device automatically.</p>
+
+    <div class="form-field">
+      <label for="sync-token">GitHub personal access token</label>
+      <input type="password" id="sync-token" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+      <div class="form-err" id="sync-token-err">Invalid token. Check permissions and try again.</div>
+    </div>
+    <p style="font-size:13px;color:var(--ink-3);margin-bottom:20px;line-height:1.6">
+      Go to <b>github.com → Settings → Developer settings → Personal access tokens → Fine-grained tokens</b>.<br>
+      Create a token with <b>Contents: Read and write</b> scoped only to the <b>guc-deadlines</b> repository.
+    </p>
+
+    <div class="form-actions">
+      <button class="btn ghost" id="syncCancel" type="button">Cancel</button>
+      <button class="btn" id="syncSave" type="button">Connect</button>
+    </div>
+  </div>
+</div>
+
 <!-- Add Event Modal -->
 <div class="modal-bg" id="addModal" role="dialog" aria-modal="true" aria-labelledby="add-h">
   <div class="modal">
     <button class="modal-close" id="addClose" aria-label="Close">×</button>
     <h3 id="add-h">Add event</h3>
-    <p class="sub-text">Saved on this device. Shows alongside your CMS events.</p>
+    <p class="sub-text" id="addSubText">Saved on this device. <button class="sync-badge" id="setupSync">Sync everywhere →</button></p>
 
     <div class="form-field">
       <label for="ev-title">Title</label>
@@ -376,12 +401,48 @@ function shortName(name){
   return s.length<=20?s:s.slice(0,18)+"…";
 }
 
-// ── Custom events ────────────────────────────────────────────────────────────
-function loadCustomEvents(){
+// ── GitHub sync ───────────────────────────────────────────────────────────────
+const REPO="Mistrodude/guc-deadlines",CPATH="docs/custom-events.json";
+let ghToken=localStorage.getItem("ghToken")||"",_sha=null;
+async function ghGet(){
+  try{
+    const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${CPATH}`,
+      {headers:{Authorization:`token ${ghToken}`,Accept:"application/vnd.github+json"}});
+    if(r.ok){const d=await r.json();_sha=d.sha;return true;}
+    if(r.status===401||r.status===403){ghToken="";localStorage.removeItem("ghToken");}
+  }catch(e){}
+  return false;
+}
+async function ghPush(retry){
+  if(!ghToken)return false;
+  if(!_sha&&!retry)await ghGet();
+  const content=btoa(unescape(encodeURIComponent(JSON.stringify(customEvents,null,2))));
+  const body={message:"Update custom events",content};
+  if(_sha)body.sha=_sha;
+  try{
+    const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${CPATH}`,{
+      method:"PUT",
+      headers:{Authorization:`token ${ghToken}`,"Content-Type":"application/json",Accept:"application/vnd.github+json"},
+      body:JSON.stringify(body)
+    });
+    if(r.ok){const d=await r.json();_sha=d.content.sha;return true;}
+    if(r.status===409&&!retry){_sha=null;return ghPush(true);}
+    if(r.status===401||r.status===403){ghToken="";localStorage.removeItem("ghToken");}
+  }catch(e){}
+  return false;
+}
+
+// ── Custom events ─────────────────────────────────────────────────────────────
+async function loadCustomEvents(){
+  try{
+    const r=await fetch("custom-events.json?t="+Date.now(),{cache:"no-store"});
+    if(r.ok){const d=await r.json();customEvents=Array.isArray(d)?d:[];return;}
+  }catch(e){}
   customEvents=store("customEvents")||[];
 }
 function saveCustomEvents(){
   store("customEvents",customEvents);
+  if(ghToken)ghPush().catch(()=>{});
 }
 function deleteCustomEvent(id){
   customEvents=customEvents.filter(e=>e.id!==id);
@@ -389,17 +450,28 @@ function deleteCustomEvent(id){
   renderAll();
 }
 function allEvents(){
-  // Merge CMS events + custom events into one sorted array
   const cms=D?D.events:[];
-  return [...cms,...customEvents].sort((a,b)=>{
+  return[...cms,...customEvents].sort((a,b)=>{
     if(a.date!==b.date)return a.date<b.date?-1:1;
     return(a.time||"99:99")<(b.time||"99:99")?-1:1;
   });
 }
+function updateSyncUI(){
+  const el=$("#addSubText");if(!el)return;
+  if(ghToken){
+    el.innerHTML='Events sync across all your devices. <button class="sync-badge" id="disconnectSync">Disconnect</button>';
+    const b=$("#disconnectSync");
+    if(b)b.onclick=e=>{e.preventDefault();if(confirm("Remove sync token from this device?")){ghToken="";localStorage.removeItem("ghToken");_sha=null;updateSyncUI();}};
+  }else{
+    el.innerHTML='Saved on this device. <button class="sync-badge" id="setupSync">Sync everywhere →</button>';
+    const b=$("#setupSync");
+    if(b)b.onclick=e=>{e.preventDefault();closeAddModal();openSyncModal();};
+  }
+}
 
 // ── Load ─────────────────────────────────────────────────────────────────────
 async function load(){
-  loadCustomEvents();
+  await loadCustomEvents();
   try{const r=await fetch("events.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;D=await r.json()}
   catch(e){D=window.__EMBED__||null}
   if(!D){$("#meta").textContent="No data yet. The robot hasn't run its first scan.";renderAll();return}
@@ -576,6 +648,7 @@ function openAddModal(){
   $("#ev-note").value="";
   $("#ev-title-err").style.display="none";
   $("#ev-date-err").style.display="none";
+  updateSyncUI();
   $("#addModal").classList.add("open");
   setTimeout(()=>$("#ev-title").focus(),300);
 }
@@ -617,6 +690,35 @@ $("#addSave").onclick=()=>{
   renderAll();
   if(D)renderMeta();
   if(D)renderLegend();
+};
+
+// ── Sync modal ────────────────────────────────────────────────────────────────
+function openSyncModal(){
+  $("#sync-token").value="";
+  $("#sync-token-err").style.display="none";
+  $("#syncModal").classList.add("open");
+  setTimeout(()=>$("#sync-token").focus(),300);
+}
+function closeSyncModal(){$("#syncModal").classList.remove("open")}
+$("#syncClose").onclick=closeSyncModal;
+$("#syncCancel").onclick=closeSyncModal;
+$("#syncModal").onclick=e=>{if(e.target===$("#syncModal"))closeSyncModal()};
+$("#syncSave").onclick=async()=>{
+  const token=$("#sync-token").value.trim();
+  if(!token){$("#sync-token-err").textContent="Please enter a token.";$("#sync-token-err").style.display="block";return;}
+  const btn=$("#syncSave");btn.textContent="Connecting…";btn.disabled=true;
+  try{
+    const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${CPATH}`,
+      {headers:{Authorization:`token ${token}`,Accept:"application/vnd.github+json"}});
+    if(r.status===401||r.status===403)throw new Error("auth");
+    if(r.ok){const d=await r.json();_sha=d.sha;}
+    ghToken=token;localStorage.setItem("ghToken",token);
+    if(customEvents.length)await ghPush();
+    closeSyncModal();updateSyncUI();
+  }catch(e){
+    $("#sync-token-err").textContent=e.message==="auth"?"Invalid token — check permissions and expiry.":"Connection failed. Check your internet and try again.";
+    $("#sync-token-err").style.display="block";
+  }finally{btn.textContent="Connect";btn.disabled=false;}
 };
 
 // ── Event delegation ──────────────────────────────────────────────────────────
