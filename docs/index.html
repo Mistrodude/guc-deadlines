@@ -132,6 +132,17 @@ details.ev summary::-webkit-details-marker{display:none}
 .delete-btn:hover{background:#FEF2F2}
 .sync-badge{font-size:12px;color:var(--accent);background:none;border:0;cursor:pointer;padding:0;text-decoration:underline;font-family:inherit}
 .empty{color:var(--ink-3);font-size:15px;padding:12px 2px}
+.fab-group{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:20px;display:flex;flex-direction:column;align-items:flex-end;gap:10px;z-index:100}
+.fab-secondary{background:var(--card);color:var(--accent);border:2px solid var(--accent);border-radius:999px;
+  padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;
+  box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:6px;transition:transform .15s}
+.fab-secondary:hover{transform:translateY(-2px)}
+.toast{position:fixed;bottom:calc(90px + env(safe-area-inset-bottom,0px));left:50%;
+  transform:translateX(-50%) translateY(12px);
+  background:#111827;color:#fff;padding:10px 20px;border-radius:999px;
+  font-size:14px;font-weight:600;opacity:0;pointer-events:none;
+  transition:all .25s;z-index:400;white-space:nowrap;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .toggle-past{background:none;border:0;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;padding:8px 0 0}
 
 /* ── Calendar ── */
@@ -283,8 +294,11 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
   <footer id="foot"></footer>
 </div>
 
-<!-- FAB -->
-<button class="fab" id="fabBtn">+ Add Event</button>
+<!-- FABs -->
+<div class="fab-group">
+  <button class="fab-secondary" id="shareBtn">↑ Share events</button>
+  <button class="fab" id="fabBtn">+ Add Event</button>
+</div>
 
 <!-- Sync Modal -->
 <div class="modal-bg" id="syncModal" role="dialog" aria-modal="true" aria-labelledby="sync-h">
@@ -474,6 +488,7 @@ async function load(){
   await loadCustomEvents();
   try{const r=await fetch("events.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;D=await r.json()}
   catch(e){D=window.__EMBED__||null}
+  checkImport();
   if(!D){$("#meta").textContent="No data yet. The robot hasn't run its first scan.";renderAll();return}
   D.courses.forEach((c,i)=>color[c.code]=PALETTE[i%PALETTE.length]);
   hidden=new Set(store("hidden")||[]);
@@ -690,6 +705,49 @@ $("#addSave").onclick=()=>{
   renderAll();
   if(D)renderMeta();
   if(D)renderLegend();
+};
+
+// ── Toast ─────────────────────────────────────────────────────────────────────
+function showToast(msg,dur=3000){
+  let el=document.getElementById("toast");
+  if(!el){el=document.createElement("div");el.id="toast";el.className="toast";document.body.appendChild(el);}
+  el.textContent=msg;el.classList.add("show");
+  clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("show"),dur);
+}
+
+// ── Import / Export via sync link ─────────────────────────────────────────────
+function checkImport(){
+  const h=location.hash;
+  if(!h.startsWith("#import="))return;
+  history.replaceState(null,"",location.pathname+location.search);
+  try{
+    const data=JSON.parse(decodeURIComponent(atob(h.slice(8))));
+    if(!Array.isArray(data)||!data.length)return;
+    const existing=new Set(customEvents.map(e=>e.id));
+    const fresh=data.filter(e=>e.id&&!existing.has(e.id));
+    if(!fresh.length){showToast("Already up to date");return;}
+    customEvents.push(...fresh);
+    saveCustomEvents();
+    renderAll();
+    if(D){renderMeta();renderLegend();}
+    showToast("Imported "+fresh.length+" event"+(fresh.length>1?"s":"")+" ✓",4000);
+  }catch(e){showToast("Couldn't read sync link");}
+}
+
+document.getElementById("shareBtn").onclick=async()=>{
+  if(!customEvents.length){showToast("No custom events to share yet");return;}
+  const url=location.origin+location.pathname+"#import="+btoa(encodeURIComponent(JSON.stringify(customEvents)));
+  try{
+    if(navigator.share){
+      await navigator.share({title:"GUC Deadlines — sync",url});
+    }else{
+      await navigator.clipboard.writeText(url);
+      showToast("Sync link copied — open it on your other device");
+    }
+  }catch(e){
+    try{await navigator.clipboard.writeText(url);showToast("Sync link copied — open it on your other device");}
+    catch(e2){showToast("Couldn't copy — try on your phone");}
+  }
 };
 
 // ── Sync modal ────────────────────────────────────────────────────────────────
