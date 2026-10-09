@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T14:46+03:00",
+ "generated_at": "2026-10-09T23:01+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-10-09",
  "season": "Winter 2026",
@@ -430,6 +430,66 @@
    "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-10-08T23_49_23.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MATH301-271477",
+   "course": "MATH301",
+   "title": "Lecture 11",
+   "type": "Lecture notes",
+   "week": "2026-10-10",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-09-16T09_54_30.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T23:01+03:00"
+  },
+  {
+   "id": "MATH301-271478",
+   "course": "MATH301",
+   "title": "Lecture 12",
+   "type": "Lecture notes",
+   "week": "2026-10-10",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-09-16T09_54_53.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T23:01+03:00"
+  },
+  {
+   "id": "MATH301-271479",
+   "course": "MATH301",
+   "title": "Worksheet 6",
+   "type": "Exercise",
+   "week": "2026-10-10",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-09-16T09_53_45.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T23:01+03:00"
+  },
+  {
+   "id": "MATH301-271480",
+   "course": "MATH301",
+   "title": "Solution of Worksheet 6",
+   "type": "Exercise",
+   "week": "2026-10-10",
+   "url": "/Uploads/64/45/46270/GUC_45_64_46270_2024-09-16T09_54_04.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T23:01+03:00"
+  },
+  {
+   "id": "MATH301-271481",
+   "course": "MATH301",
+   "title": "Tutorial 11 Video",
+   "type": "VoD",
+   "week": "2026-10-10",
+   "url": "/Uploads/52/45/369/GUC_45_52_369_2020-11-08T17_26_16.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T23:01+03:00"
+  },
+  {
+   "id": "MATH301-271482",
+   "course": "MATH301",
+   "title": "Tutorial 12 Video",
+   "type": "VoD",
+   "week": "2026-10-10",
+   "url": "/Uploads/52/45/369/GUC_45_52_369_2020-11-08T17_39_00.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-09T23:01+03:00"
   },
   {
    "id": "HUMA901-272253",
