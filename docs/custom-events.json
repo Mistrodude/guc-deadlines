@@ -33,6 +33,12 @@
   ],
   "todos": [
     {
+      "id": "todo-1791648649361",
+      "text": "Make thermo website",
+      "done": false,
+      "created": "2026-10-10T16:10:49.361Z"
+    },
+    {
       "id": "todo-1791648643488",
       "text": "Go to medical department",
       "done": false,
