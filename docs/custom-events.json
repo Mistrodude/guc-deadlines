@@ -33,6 +33,12 @@
   ],
   "todos": [
     {
+      "id": "todo-1791648799637",
+      "text": "get egyspots on appstore",
+      "done": false,
+      "created": "2026-10-10T16:13:19.637Z"
+    },
+    {
       "id": "todo-1791648661903",
       "text": "Study math",
       "done": false,
