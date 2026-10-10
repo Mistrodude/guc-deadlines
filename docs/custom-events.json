@@ -33,6 +33,12 @@
   ],
   "todos": [
     {
+      "id": "todo-1791657782954",
+      "text": "Check for military status",
+      "done": false,
+      "created": "2026-10-10T18:43:02.954Z"
+    },
+    {
       "id": "todo-1791648818236",
       "text": "work on gloves for delivery",
       "done": false,
