@@ -33,6 +33,12 @@
   ],
   "todos": [
     {
+      "id": "todo-1791648818236",
+      "text": "work on gloves for delivery",
+      "done": false,
+      "created": "2026-10-10T16:13:38.236Z"
+    },
+    {
       "id": "todo-1791648799637",
       "text": "get egyspots on appstore",
       "done": false,
