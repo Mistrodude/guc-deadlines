@@ -33,6 +33,12 @@
   ],
   "todos": [
     {
+      "id": "todo-1791648661903",
+      "text": "Study math",
+      "done": false,
+      "created": "2026-10-10T16:11:01.903Z"
+    },
+    {
       "id": "todo-1791648656608",
       "text": "Make design website",
       "done": false,
