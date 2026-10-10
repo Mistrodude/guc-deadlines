@@ -1,4 +1,35 @@
 {
-  "events": [],
+  "events": [
+    {
+      "id": "custom-1791232404953",
+      "custom": true,
+      "date": "2026-10-18",
+      "time": null,
+      "kind": "project",
+      "title": "red milestone",
+      "course": "EDPT1009",
+      "course_name": "Robotics",
+      "text": "",
+      "flags": [],
+      "by": [
+        "custom"
+      ]
+    },
+    {
+      "id": "custom-1791555893692",
+      "custom": true,
+      "date": "2026-10-15",
+      "time": null,
+      "kind": "info",
+      "title": "project milestone 2 robotics",
+      "course": "EDPT1009",
+      "course_name": "Robotics",
+      "text": "",
+      "flags": [],
+      "by": [
+        "custom"
+      ]
+    }
+  ],
   "todos": []
 }
