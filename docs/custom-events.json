@@ -31,5 +31,12 @@
       ]
     }
   ],
-  "todos": []
+  "todos": [
+    {
+      "id": "todo-1791648630932",
+      "text": "Get a haircut",
+      "done": false,
+      "created": "2026-10-10T16:10:30.932Z"
+    }
+  ]
 }
