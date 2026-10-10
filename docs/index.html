@@ -132,17 +132,26 @@ details.ev summary::-webkit-details-marker{display:none}
 .delete-btn:hover{background:#FEF2F2}
 .sync-badge{font-size:12px;color:var(--accent);background:none;border:0;cursor:pointer;padding:0;text-decoration:underline;font-family:inherit}
 .empty{color:var(--ink-3);font-size:15px;padding:12px 2px}
-.fab-group{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:20px;display:flex;flex-direction:column;align-items:flex-end;gap:10px;z-index:100}
-.fab-secondary{background:var(--card);color:var(--accent);border:2px solid var(--accent);border-radius:999px;
-  padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;
-  box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:6px;transition:transform .15s}
-.fab-secondary:hover{transform:translateY(-2px)}
-.toast{position:fixed;bottom:calc(90px + env(safe-area-inset-bottom,0px));left:50%;
-  transform:translateX(-50%) translateY(12px);
-  background:#111827;color:#fff;padding:10px 20px;border-radius:999px;
-  font-size:14px;font-weight:600;opacity:0;pointer-events:none;
-  transition:all .25s;z-index:400;white-space:nowrap;max-width:90vw;text-align:center}
-.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.todo{margin-bottom:18px}
+.todo-add{display:flex;gap:8px;margin-bottom:10px}
+.todo-add input{flex:1;min-width:0;background:var(--card-2);border:1.5px solid var(--border);border-radius:10px;
+  padding:11px 14px;font-size:15px;color:var(--ink);font-family:inherit;outline:none}
+.todo-add input:focus{border-color:var(--accent)}
+.todo-add .btn{margin:0;padding:10px 18px}
+.todo-list{list-style:none}
+.todo-list li{display:flex;align-items:center;gap:12px;padding:10px 2px;border-bottom:1px solid var(--border)}
+.todo-list li:last-child{border-bottom:0}
+.todo-list input[type=checkbox]{width:22px;height:22px;accent-color:var(--accent);flex-shrink:0;cursor:pointer}
+.todo-list .tt{flex:1;font-size:15px;word-break:break-word}
+.todo-list li.done .tt{text-decoration:line-through;color:var(--ink-3)}
+.todo-list .x{background:none;border:0;color:var(--ink-3);font-size:20px;line-height:1;cursor:pointer;padding:2px 6px}
+.todo-list .x:hover{color:#EF4444}
+.sync-state{font-size:12px;font-weight:600;color:var(--ink-3)}
+.sync-state button{font:inherit;color:var(--accent);background:none;border:0;cursor:pointer;padding:0;text-decoration:underline}
+.sync-state.ok{color:#10B981}
+.sync-state.err{color:#EF4444}
+.steps{margin:0 0 12px 18px;font-size:14px;color:var(--ink-2);line-height:1.6}
+.steps li{margin-bottom:10px}
 .toggle-past{background:none;border:0;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;padding:8px 0 0}
 
 /* ── Calendar ── */
@@ -248,6 +257,19 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
     <div class="strip" id="strip"></div>
   </section>
 
+  <section class="panel todo" aria-labelledby="todo-h">
+    <div class="panel-head">
+      <h2 id="todo-h">To-do</h2>
+      <span class="sync-state" id="syncState"></span>
+    </div>
+    <form class="todo-add" id="todoForm" autocomplete="off">
+      <input type="text" id="todoInput" placeholder="Add something you need to do…" maxlength="300">
+      <button class="btn" type="submit">Add</button>
+    </form>
+    <ul class="todo-list" id="todoList"></ul>
+    <button class="toggle-past" id="clearDone" type="button" hidden>Clear completed</button>
+  </section>
+
   <div class="legend" id="legend"></div>
 
   <div class="filter-section">
@@ -294,28 +316,24 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
   <footer id="foot"></footer>
 </div>
 
-<!-- FABs -->
-<div class="fab-group">
-  <button class="fab-secondary" id="shareBtn">↑ Share events</button>
-  <button class="fab" id="fabBtn">+ Add Event</button>
-</div>
+<button class="fab" id="fabBtn">+ Add Event</button>
 
 <!-- Sync Modal -->
 <div class="modal-bg" id="syncModal" role="dialog" aria-modal="true" aria-labelledby="sync-h">
   <div class="modal">
     <button class="modal-close" id="syncClose" aria-label="Close">×</button>
-    <h3 id="sync-h">Sync across devices</h3>
-    <p class="sub-text">Custom events will be saved to your GitHub repo and appear on every device automatically.</p>
+    <h3 id="sync-h">Connect this device</h3>
+    <p class="sub-text">Do this once on each device. After that, events and to-dos save online right away and show up everywhere.</p>
 
+    <ol class="steps">
+      <li><a class="btn" id="tokenLink" target="_blank" rel="noopener">1. Create key on GitHub</a></li>
+      <li>On that page, under <b>Repository access</b> pick <b>Only select repositories → guc-deadlines</b>, then tap <b>Generate token</b> and copy it.</li>
+      <li>Paste it here:</li>
+    </ol>
     <div class="form-field">
-      <label for="sync-token">GitHub personal access token</label>
       <input type="password" id="sync-token" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
       <div class="form-err" id="sync-token-err">Invalid token. Check permissions and try again.</div>
     </div>
-    <p style="font-size:13px;color:var(--ink-3);margin-bottom:20px;line-height:1.6">
-      Go to <b>github.com → Settings → Developer settings → Personal access tokens → Fine-grained tokens</b>.<br>
-      Create a token with <b>Contents: Read and write</b> scoped only to the <b>guc-deadlines</b> repository.
-    </p>
 
     <div class="form-actions">
       <button class="btn ghost" id="syncCancel" type="button">Cancel</button>
@@ -417,52 +435,111 @@ function shortName(name){
 
 // ── GitHub sync ───────────────────────────────────────────────────────────────
 const REPO="Mistrodude/guc-deadlines",CPATH="docs/custom-events.json";
-let ghToken=localStorage.getItem("ghToken")||"",_sha=null;
-async function ghGet(){
-  try{
-    const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${CPATH}`,
-      {headers:{Authorization:`token ${ghToken}`,Accept:"application/vnd.github+json"}});
-    if(r.ok){const d=await r.json();_sha=d.sha;return true;}
-    if(r.status===401||r.status===403){ghToken="";localStorage.removeItem("ghToken");}
-  }catch(e){}
-  return false;
+const API=`https://api.github.com/repos/${REPO}/contents/${CPATH}`;
+let ghToken=localStorage.getItem("ghToken")||"",_sha=null,todos=[],dirty=false,pushing=null;
+const ghHeaders=t=>({Authorization:`token ${t}`,Accept:"application/vnd.github+json"});
+const b64enc=s=>btoa(unescape(encodeURIComponent(s)));
+const b64dec=s=>decodeURIComponent(escape(atob(s.replace(/\n/g,""))));
+
+function applyData(d){
+  if(Array.isArray(d)){customEvents=d;todos=[];}
+  else{customEvents=Array.isArray(d&&d.events)?d.events:[];todos=Array.isArray(d&&d.todos)?d.todos:[];}
 }
-async function ghPush(retry){
-  if(!ghToken)return false;
-  if(!_sha&&!retry)await ghGet();
-  const content=btoa(unescape(encodeURIComponent(JSON.stringify(customEvents,null,2))));
-  const body={message:"Update custom events",content};
-  if(_sha)body.sha=_sha;
-  try{
-    const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${CPATH}`,{
-      method:"PUT",
-      headers:{Authorization:`token ${ghToken}`,"Content-Type":"application/json",Accept:"application/vnd.github+json"},
-      body:JSON.stringify(body)
-    });
-    if(r.ok){const d=await r.json();_sha=d.content.sha;return true;}
-    if(r.status===409&&!retry){_sha=null;return ghPush(true);}
-    if(r.status===401||r.status===403){ghToken="";localStorage.removeItem("ghToken");}
-  }catch(e){}
-  return false;
+function setSyncState(cls,html){const el=$("#syncState");if(el){el.className="sync-state "+cls;el.innerHTML=html;}}
+function renderSyncState(){
+  if(!ghToken)setSyncState("err",'Only on this device · <button type="button" data-connect>Connect</button>');
+  else setSyncState("ok","Synced");
 }
 
-// ── Custom events ─────────────────────────────────────────────────────────────
-async function loadCustomEvents(){
+async function ghFetch(){
+  const r=await fetch(API+"?t="+Date.now(),{headers:ghHeaders(ghToken),cache:"no-store"});
+  if(r.status===401||r.status===403){disconnect();throw new Error("auth");}
+  if(r.status===404){_sha=null;return null;}
+  if(!r.ok)throw new Error("http "+r.status);
+  const j=await r.json();_sha=j.sha;
+  return JSON.parse(b64dec(j.content));
+}
+async function ghPush(){
+  const body=JSON.stringify({events:customEvents,todos},null,2)+"\n";
+  for(let attempt=0;attempt<3;attempt++){
+    const req={message:"Update events/todos",content:b64enc(body)};
+    if(_sha)req.sha=_sha;
+    const r=await fetch(API,{method:"PUT",headers:{...ghHeaders(ghToken),"Content-Type":"application/json"},body:JSON.stringify(req)});
+    if(r.ok){_sha=(await r.json()).content.sha;return;}
+    if(r.status===401||r.status===403){disconnect();throw new Error("auth");}
+    if(r.status===409||r.status===422){const r2=await fetch(API+"?t="+Date.now(),{headers:ghHeaders(ghToken),cache:"no-store"});if(r2.ok)_sha=(await r2.json()).sha;continue;}
+    throw new Error("http "+r.status);
+  }
+  throw new Error("conflict");
+}
+function disconnect(){ghToken="";_sha=null;localStorage.removeItem("ghToken");renderSyncState();}
+
+async function loadUserData(){
+  const cached=store("userData");
+  if(cached)applyData(cached);
+  else applyData({events:store("customEvents")||[],todos:[]});
+  if(ghToken){
+    try{const d=await ghFetch();if(d)applyData(d);store("userData",{events:customEvents,todos});return;}
+    catch(e){}
+  }else{
+    try{const r=await fetch("custom-events.json?t="+Date.now(),{cache:"no-store"});
+      if(r.ok){const d=await r.json();const has=Array.isArray(d)?d.length:(d.events||[]).length+(d.todos||[]).length;if(has)applyData(d);}}catch(e){}
+  }
+}
+function saveUserData(){
+  store("userData",{events:customEvents,todos});
+  if(!ghToken){renderSyncState();return;}
+  dirty=true;
+  if(pushing)return;
+  setSyncState("","Saving…");
+  pushing=(async()=>{
+    try{while(dirty){dirty=false;await ghPush();}setSyncState("ok","Synced");}
+    catch(e){if(ghToken)setSyncState("err",'Not saved online · <button type="button" data-retry>Retry</button>');}
+    finally{pushing=null;}
+  })();
+}
+async function pullRemote(){
+  if(!ghToken||pushing||document.hidden)return;
   try{
-    const r=await fetch("custom-events.json?t="+Date.now(),{cache:"no-store"});
-    if(r.ok){const d=await r.json();customEvents=Array.isArray(d)?d:[];return;}
+    const prev=_sha,d=await ghFetch();
+    if(d&&_sha!==prev&&!pushing){applyData(d);store("userData",{events:customEvents,todos});renderAll();renderTodos();if(D){renderMeta();renderLegend();}}
   }catch(e){}
-  customEvents=store("customEvents")||[];
 }
-function saveCustomEvents(){
-  store("customEvents",customEvents);
-  if(ghToken)ghPush().catch(()=>{});
-}
+setInterval(pullRemote,15000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)pullRemote();});
+
+const saveCustomEvents=saveUserData;
 function deleteCustomEvent(id){
   customEvents=customEvents.filter(e=>e.id!==id);
-  saveCustomEvents();
+  saveUserData();
   renderAll();
 }
+
+// ── To-do ─────────────────────────────────────────────────────────────────────
+function renderTodos(){
+  const open=todos.filter(t=>!t.done),done=todos.filter(t=>t.done);
+  const row=t=>`<li class="${t.done?"done":""}"><input type="checkbox" data-todo="${esc(t.id)}" ${t.done?"checked":""} aria-label="Done"><span class="tt">${esc(t.text)}</span><button class="x" type="button" data-todo-del="${esc(t.id)}" aria-label="Delete">×</button></li>`;
+  $("#todoList").innerHTML=todos.length?[...open,...done].map(row).join(""):`<li class="empty" style="border:0">Nothing to do. Nice.</li>`;
+  $("#clearDone").hidden=!done.length;
+}
+$("#todoForm").onsubmit=e=>{
+  e.preventDefault();
+  const text=$("#todoInput").value.trim();if(!text)return;
+  todos.unshift({id:"todo-"+Date.now(),text,done:false,created:new Date().toISOString()});
+  $("#todoInput").value="";
+  renderTodos();saveUserData();
+};
+$("#todoList").onchange=e=>{
+  const id=e.target.dataset.todo;if(!id)return;
+  const t=todos.find(x=>x.id===id);if(t)t.done=e.target.checked;
+  renderTodos();saveUserData();
+};
+$("#todoList").onclick=e=>{
+  const b=e.target.closest("[data-todo-del]");if(!b)return;
+  todos=todos.filter(x=>x.id!==b.dataset.todoDel);
+  renderTodos();saveUserData();
+};
+$("#clearDone").onclick=()=>{todos=todos.filter(t=>!t.done);renderTodos();saveUserData();};
 function allEvents(){
   const cms=D?D.events:[];
   return[...cms,...customEvents].sort((a,b)=>{
@@ -472,23 +549,17 @@ function allEvents(){
 }
 function updateSyncUI(){
   const el=$("#addSubText");if(!el)return;
-  if(ghToken){
-    el.innerHTML='Events sync across all your devices. <button class="sync-badge" id="disconnectSync">Disconnect</button>';
-    const b=$("#disconnectSync");
-    if(b)b.onclick=e=>{e.preventDefault();if(confirm("Remove sync token from this device?")){ghToken="";localStorage.removeItem("ghToken");_sha=null;updateSyncUI();}};
-  }else{
-    el.innerHTML='Saved on this device. <button class="sync-badge" id="setupSync">Sync everywhere →</button>';
-    const b=$("#setupSync");
-    if(b)b.onclick=e=>{e.preventDefault();closeAddModal();openSyncModal();};
-  }
+  el.innerHTML=ghToken?"Saves online and shows on all your devices."
+    :'Only on this device. <button class="sync-badge" type="button" data-connect>Connect to save online →</button>';
 }
 
 // ── Load ─────────────────────────────────────────────────────────────────────
 async function load(){
-  await loadCustomEvents();
+  renderSyncState();
+  await loadUserData();
+  renderTodos();
   try{const r=await fetch("events.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;D=await r.json()}
   catch(e){D=window.__EMBED__||null}
-  checkImport();
   if(!D){$("#meta").textContent="No data yet. The robot hasn't run its first scan.";renderAll();return}
   D.courses.forEach((c,i)=>color[c.code]=PALETTE[i%PALETTE.length]);
   hidden=new Set(store("hidden")||[]);
@@ -707,50 +778,10 @@ $("#addSave").onclick=()=>{
   if(D)renderLegend();
 };
 
-// ── Toast ─────────────────────────────────────────────────────────────────────
-function showToast(msg,dur=3000){
-  let el=document.getElementById("toast");
-  if(!el){el=document.createElement("div");el.id="toast";el.className="toast";document.body.appendChild(el);}
-  el.textContent=msg;el.classList.add("show");
-  clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("show"),dur);
-}
-
-// ── Import / Export via sync link ─────────────────────────────────────────────
-function checkImport(){
-  const h=location.hash;
-  if(!h.startsWith("#import="))return;
-  history.replaceState(null,"",location.pathname+location.search);
-  try{
-    const data=JSON.parse(decodeURIComponent(atob(h.slice(8))));
-    if(!Array.isArray(data)||!data.length)return;
-    const existing=new Set(customEvents.map(e=>e.id));
-    const fresh=data.filter(e=>e.id&&!existing.has(e.id));
-    if(!fresh.length){showToast("Already up to date");return;}
-    customEvents.push(...fresh);
-    saveCustomEvents();
-    renderAll();
-    if(D){renderMeta();renderLegend();}
-    showToast("Imported "+fresh.length+" event"+(fresh.length>1?"s":"")+" ✓",4000);
-  }catch(e){showToast("Couldn't read sync link");}
-}
-
-document.getElementById("shareBtn").onclick=async()=>{
-  if(!customEvents.length){showToast("No custom events to share yet");return;}
-  const url=location.origin+location.pathname+"#import="+btoa(encodeURIComponent(JSON.stringify(customEvents)));
-  try{
-    if(navigator.share){
-      await navigator.share({title:"GUC Deadlines — sync",url});
-    }else{
-      await navigator.clipboard.writeText(url);
-      showToast("Sync link copied — open it on your other device");
-    }
-  }catch(e){
-    try{await navigator.clipboard.writeText(url);showToast("Sync link copied — open it on your other device");}
-    catch(e2){showToast("Couldn't copy — try on your phone");}
-  }
-};
-
 // ── Sync modal ────────────────────────────────────────────────────────────────
+$("#tokenLink").href="https://github.com/settings/personal-access-tokens/new?"+new URLSearchParams({
+  name:"GUC Deadlines sync",description:"Lets the GUC Deadlines site save events and to-dos",
+  expires_in:"none",contents:"write"});
 function openSyncModal(){
   $("#sync-token").value="";
   $("#sync-token-err").style.display="none";
@@ -766,13 +797,19 @@ $("#syncSave").onclick=async()=>{
   if(!token){$("#sync-token-err").textContent="Please enter a token.";$("#sync-token-err").style.display="block";return;}
   const btn=$("#syncSave");btn.textContent="Connecting…";btn.disabled=true;
   try{
-    const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${CPATH}`,
-      {headers:{Authorization:`token ${token}`,Accept:"application/vnd.github+json"}});
-    if(r.status===401||r.status===403)throw new Error("auth");
-    if(r.ok){const d=await r.json();_sha=d.sha;}
-    ghToken=token;localStorage.setItem("ghToken",token);
-    if(customEvents.length)await ghPush();
-    closeSyncModal();updateSyncUI();
+    const localEvents=customEvents,localTodos=todos;
+    ghToken=token;
+    let remote;
+    try{remote=await ghFetch();}catch(err){ghToken="";throw err;}
+    if(!ghToken)throw new Error("auth");
+    localStorage.setItem("ghToken",token);
+    applyData(remote||{events:[],todos:[]});
+    const evIds=new Set(customEvents.map(x=>x.id)),tdIds=new Set(todos.map(x=>x.id));
+    const extraEv=localEvents.filter(x=>!evIds.has(x.id)),extraTd=localTodos.filter(x=>!tdIds.has(x.id));
+    customEvents=[...customEvents,...extraEv];todos=[...extraTd,...todos];
+    closeSyncModal();updateSyncUI();renderSyncState();
+    renderAll();renderTodos();if(D){renderMeta();renderLegend();}
+    if(extraEv.length||extraTd.length||!remote)saveUserData();else store("userData",{events:customEvents,todos});
   }catch(e){
     $("#sync-token-err").textContent=e.message==="auth"?"Invalid token — check permissions and expiry.":"Connection failed. Check your internet and try again.";
     $("#sync-token-err").style.display="block";
@@ -781,6 +818,8 @@ $("#syncSave").onclick=async()=>{
 
 // ── Event delegation ──────────────────────────────────────────────────────────
 document.addEventListener("click",e=>{
+  if(e.target.closest("[data-connect]")){e.preventDefault();closeAddModal();openSyncModal();return}
+  if(e.target.closest("[data-retry]")){saveUserData();return}
   const del=e.target.closest("[data-del]");
   if(del){deleteCustomEvent(del.dataset.del);return}
   const b=e.target.closest("[data-id]");
