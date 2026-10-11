@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-10T22:10+03:00",
+ "generated_at": "2026-10-11T14:20+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-10",
+ "today": "2026-10-11",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -1552,6 +1552,16 @@
    "first_seen": "2026-09-30T17:28+03:00"
   },
   {
+   "id": "EDPT1009-280418",
+   "course": "EDPT1009",
+   "title": "Registered Teams Updated",
+   "type": "Supplementary notes",
+   "week": "2026-09-07",
+   "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-10-11T08_45_51.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-11T14:20+03:00"
+  },
+  {
    "id": "EDPT1009-279389",
    "course": "EDPT1009",
    "title": "EDPT1009 Robotics Project Milestone 02 Description",
@@ -1578,16 +1588,6 @@
    "type": "Supplementary notes",
    "week": "2026-09-07",
    "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-09-17T09_41_20.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
-   "first_seen": "2026-09-30T17:28+03:00"
-  },
-  {
-   "id": "EDPT1009-275677",
-   "course": "EDPT1009",
-   "title": "Registered Teams",
-   "type": "Supplementary notes",
-   "week": "2026-09-07",
-   "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-09-19T14_22_37.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
   },
