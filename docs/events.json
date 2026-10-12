@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-11T22:23+03:00",
+ "generated_at": "2026-10-12T16:00+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-11",
+ "today": "2026-10-12",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -327,27 +327,6 @@
    "id": "6f2014a69221",
    "first_seen": "2026-10-06T14:54+03:00",
    "flags_serious": false
-  },
-  {
-   "date": "2026-10-30",
-   "time": "15:45",
-   "kind": "quiz",
-   "title": "Quiz 1",
-   "where": "D1.001, D1.002, D1.003",
-   "text": "- Quiz 1 will be on Wednesday 30th of October at 3:45 pm in D1.001, D1.002 and D1.003",
-   "source": "Course announcement",
-   "flags": [
-    "says Wednesday but 30 Oct is a Friday"
-   ],
-   "by": [
-    "rules"
-   ],
-   "course": "ELCT704",
-   "course_name": "Power Electronics",
-   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
-   "id": "7bf61b9e9971",
-   "first_seen": "2026-09-30T17:28+03:00",
-   "flags_serious": true
   }
  ],
  "items": [
