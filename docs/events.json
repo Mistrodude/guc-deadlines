@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T01:25+03:00",
+ "generated_at": "2026-10-13T15:34+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-10-13",
  "season": "Winter 2026",
@@ -329,6 +329,25 @@
    "flags_serious": false
   },
   {
+   "date": "2026-10-15",
+   "time": null,
+   "kind": "project",
+   "title": "Milestone 2",
+   "where": null,
+   "text": "The evaluations will take place on Thursday 15th of October 2026.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "EDPT1009",
+   "course_name": "Robotics",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "id": "10d457d12293",
+   "first_seen": "2026-10-13T15:34+03:00",
+   "flags_serious": false
+  },
+  {
    "date": "2026-10-19",
    "time": null,
    "kind": "deadline",
@@ -345,6 +364,25 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
    "id": "d6c308a02453",
    "first_seen": "2026-10-13T01:25+03:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-10-19",
+   "time": null,
+   "kind": "cancelled",
+   "title": "No lecture",
+   "where": null,
+   "text": "There is no lecture on Monday 19th of October, but I will be available for office hours.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT708",
+   "course_name": "Electric Machines",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "id": "cbfcddb5720c",
+   "first_seen": "2026-10-13T15:34+03:00",
    "flags_serious": false
   }
  ],
@@ -428,6 +466,26 @@
    "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-10-08T23_49_23.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "HUMA901-272254",
+   "course": "HUMA901",
+   "title": "L6",
+   "type": "Lecture notes",
+   "week": "2026-10-12",
+   "url": "/Uploads/67/611/60912/GUC_611_67_60912_2025-10-22T08_07_35.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "first_seen": "2026-10-13T15:34+03:00"
+  },
+  {
+   "id": "HUMA901-272255",
+   "course": "HUMA901",
+   "title": "Examples",
+   "type": "Exercise",
+   "week": "2026-10-12",
+   "url": "/Uploads/67/611/60912/GUC_611_67_60912_2025-10-22T12_48_25.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "first_seen": "2026-10-13T15:34+03:00"
   },
   {
    "id": "MCTR702-280691",
@@ -518,6 +576,16 @@
    "url": "/Uploads/52/45/369/GUC_45_52_369_2020-11-08T17_39_00.m4v",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-10-09T23:01+03:00"
+  },
+  {
+   "id": "ELCT708-281136",
+   "course": "ELCT708",
+   "title": "Lecture 5",
+   "type": "Lecture slides",
+   "week": "2026-10-05",
+   "url": "/Uploads/70/723/72808/GUC_723_70_72808_2026-10-13T09_39_04.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-10-13T15:34+03:00"
   },
   {
    "id": "ELCT708-281079",
@@ -1608,6 +1676,16 @@
    "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-09-28T15_24_09.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-281254",
+   "course": "EDPT1009",
+   "title": "Milestone 2 Evaluation Timetable",
+   "type": "Project",
+   "week": "2026-09-07",
+   "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-10-13T13_59_50.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-13T15:34+03:00"
   },
   {
    "id": "EDPT1009-280418",
