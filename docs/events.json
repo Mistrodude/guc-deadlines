@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-16T21:40+03:00",
+ "generated_at": "2026-10-17T12:08+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-16",
+ "today": "2026-10-17",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -466,6 +466,36 @@
    "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-10-08T23_49_23.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-10-09T14:46+03:00"
+  },
+  {
+   "id": "MCTR702-281855",
+   "course": "MCTR702",
+   "title": "Lecture 6_Modern Control",
+   "type": "Lecture notes",
+   "week": "2026-10-17",
+   "url": "/Uploads/70/725/73278/GUC_725_70_73278_2026-10-17T08_58_59.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-10-17T12:08+03:00"
+  },
+  {
+   "id": "MCTR702-281856",
+   "course": "MCTR702",
+   "title": "Mathematica Files 1",
+   "type": "Other",
+   "week": "2026-10-17",
+   "url": "/Uploads/70/725/73278/GUC_725_70_73278_2026-10-17T08_59_28.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-10-17T12:08+03:00"
+  },
+  {
+   "id": "MCTR702-281857",
+   "course": "MCTR702",
+   "title": "Mathematica Files 2",
+   "type": "Other",
+   "week": "2026-10-17",
+   "url": "/Uploads/70/725/73278/GUC_725_70_73278_2026-10-17T08_59_52.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-10-17T12:08+03:00"
   },
   {
    "id": "HUMA901-272254",
