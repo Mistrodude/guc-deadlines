@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T12:08+03:00",
+ "generated_at": "2026-10-17T20:47+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-10-17",
  "season": "Winter 2026",
@@ -1078,6 +1078,16 @@
    "first_seen": "2026-09-30T17:28+03:00"
   },
   {
+   "id": "EDPT903-281953",
+   "course": "EDPT903",
+   "title": "Mechanisms - (Updated)",
+   "type": "Project",
+   "week": "2026-09-13",
+   "url": "/Uploads/70/570/70987/GUC_570_70_70987_2026-10-17T17_12_35.zip",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "first_seen": "2026-10-17T20:47+03:00"
+  },
+  {
    "id": "EDPT903-281815",
    "course": "EDPT903",
    "title": "Project Team-Number Assignment (Updated)",
@@ -1086,26 +1096,6 @@
    "url": "/Uploads/70/570/70987/GUC_570_70_70987_2026-10-16T16_37_51.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
    "first_seen": "2026-10-16T21:40+03:00"
-  },
-  {
-   "id": "EDPT903-281098",
-   "course": "EDPT903",
-   "title": "Project Team-Number Assignment",
-   "type": "Project",
-   "week": "2026-09-13",
-   "url": "/Uploads/70/570/70987/GUC_570_70_70987_2026-10-12T19_22_22.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
-   "first_seen": "2026-10-13T01:25+03:00"
-  },
-  {
-   "id": "EDPT903-281099",
-   "course": "EDPT903",
-   "title": "Mechanisms",
-   "type": "Project",
-   "week": "2026-09-13",
-   "url": "/Uploads/67/570/60819/GUC_570_67_60819_2025-10-22T16_46_07.zip",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
-   "first_seen": "2026-10-13T01:25+03:00"
   },
   {
    "id": "EDPT903-281102",
