@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-23T21:55+03:00",
+ "generated_at": "2026-10-24T12:23+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-23",
+ "today": "2026-10-24",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -1916,6 +1916,46 @@
    "url": "/Uploads/70/747/71034/GUC_747_70_71034_2026-09-24T17_58_04.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-282678",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L04_Inverse Position Kinematics",
+   "type": "Lecture slides",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71036/GUC_747_70_71036_2026-10-24T10_40_24.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-24T12:23+03:00"
+  },
+  {
+   "id": "EDPT1009-282679",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L05_Velocity kinematics",
+   "type": "Lecture slides",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71036/GUC_747_70_71036_2026-10-24T10_41_06.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-24T12:23+03:00"
+  },
+  {
+   "id": "EDPT1009-282681",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L05_Velocity kinematics-VoD",
+   "type": "VoD",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71588/GUC_747_70_71588_2026-10-24T10_44_18.mp4",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-24T12:23+03:00"
+  },
+  {
+   "id": "EDPT1009-282682",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L06_kinematics Finalized-VoD",
+   "type": "VoD",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71588/GUC_747_70_71588_2026-10-24T10_46_05.mp4",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-10-24T12:23+03:00"
   },
   {
    "id": "EDPT1009-278600",
