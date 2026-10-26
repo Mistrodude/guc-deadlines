@@ -132,6 +132,37 @@ details.ev summary::-webkit-details-marker{display:none}
 .delete-btn:hover{background:#FEF2F2}
 .sync-badge{font-size:12px;color:var(--accent);background:none;border:0;cursor:pointer;padding:0;text-decoration:underline;font-family:inherit}
 .empty{color:var(--ink-3);font-size:15px;padding:12px 2px}
+/* ── Study plan ── */
+.study{margin-top:18px}
+.study-range{font-size:13px;font-weight:600;color:var(--ink-3);margin-left:6px}
+.study-goals{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.goal{font-size:12px;font-weight:700;border-radius:999px;padding:4px 10px;background:var(--card-2);color:var(--ink-2);border:1px solid var(--border)}
+.goal.met{background:rgba(16,185,129,.12);color:#059669;border-color:rgba(16,185,129,.3)}
+.goal.miss{background:var(--warn-bg);color:var(--warn);border-color:transparent}
+.sday{display:grid;grid-template-columns:78px 1fr;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--border)}
+.sday:last-child{border-bottom:0}
+.sdate{font-size:12px;color:var(--ink-3);line-height:1.3}
+.sdate b{display:block;font-size:14px;color:var(--ink);font-weight:700}
+.sday.today .sdate b{color:var(--accent)}
+.sday.today{background:linear-gradient(90deg,rgba(79,70,229,.07),transparent);border-radius:var(--r-sm);padding-left:8px;margin-left:-8px}
+.sday.past .sitems{opacity:.6}
+.sitems{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.schip{display:inline-flex;align-items:center;gap:6px;background:var(--card-2);border:1.5px solid var(--border);
+  border-left:4px solid var(--c);border-radius:999px;padding:3px 4px 3px 10px;font-size:13px;font-weight:600}
+.schip .sname{background:none;border:0;color:var(--ink);font:inherit;cursor:pointer;padding:2px 0;display:inline-flex;align-items:center;gap:6px}
+.schip .sname::before{content:"";width:14px;height:14px;border-radius:50%;border:2px solid var(--c);flex-shrink:0;box-sizing:border-box}
+.schip.done .sname{color:var(--ink-3);text-decoration:line-through}
+.schip.done .sname::before{background:var(--c)}
+.stag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:5px;padding:2px 6px;font-style:normal}
+.stag.quiz{background:#EF4444;color:#fff}
+.stag.you{background:var(--accent);color:#fff}
+.schip .sx{background:none;border:0;color:var(--ink-3);font-size:17px;line-height:1;cursor:pointer;padding:0 6px}
+.schip .sx:hover{color:#EF4444}
+.sadd{border:1.5px dashed var(--border);background:none;color:var(--ink-3);border-radius:999px;width:30px;height:28px;font-size:17px;cursor:pointer;line-height:1}
+.sadd:hover{color:var(--accent);border-color:var(--accent)}
+.sempty{font-size:13px;color:var(--warn)}
+.study-note{font-size:12px;color:var(--ink-3);margin-top:12px;line-height:1.5}
+
 .todo{margin-bottom:18px}
 .todo-add{display:flex;gap:8px;margin-bottom:10px}
 .todo-add input{flex:1;min-width:0;background:var(--card-2);border:1.5px solid var(--border);border-radius:10px;
@@ -299,6 +330,18 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
     </section>
   </div>
 
+  <section class="panel study" aria-labelledby="st-h">
+    <div class="mhead">
+      <h2 id="st-h">Study plan <span class="study-range" id="studyRange"></span></h2>
+      <button class="navb" id="stPrev" type="button" aria-label="Previous week">‹</button>
+      <button class="navb txt" id="stNow" type="button">This week</button>
+      <button class="navb" id="stNext" type="button" aria-label="Next week">›</button>
+    </div>
+    <div class="study-goals" id="studyGoals"></div>
+    <div class="study-days" id="studyDays"></div>
+    <p class="study-note">Auto-planned: Math 2×, Thermo, Design and Power Electronics at least once a week, at least one subject every day, and the course of any quiz the day before it. Tap a subject to mark it done, × to remove it, + to add one.</p>
+  </section>
+
   <div class="lower">
     <section class="panel" aria-labelledby="f-h">
       <h2 id="f-h">New on CMS</h2>
@@ -338,6 +381,29 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
     <div class="form-actions">
       <button class="btn ghost" id="syncCancel" type="button">Cancel</button>
       <button class="btn" id="syncSave" type="button">Connect</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add Study Modal -->
+<div class="modal-bg" id="studyModal" role="dialog" aria-modal="true" aria-labelledby="sm-h">
+  <div class="modal">
+    <button class="modal-close" id="smClose" aria-label="Close">×</button>
+    <h3 id="sm-h">Add study session</h3>
+    <p class="sub-text">Adds a subject to your study plan for that day.</p>
+    <div class="form-row">
+      <div class="form-field">
+        <label for="sm-date">Day</label>
+        <input type="date" id="sm-date">
+      </div>
+      <div class="form-field">
+        <label for="sm-course">Course</label>
+        <select id="sm-course"></select>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button class="btn ghost" id="smCancel" type="button">Cancel</button>
+      <button class="btn" id="smSave" type="button">Add to plan</button>
     </div>
   </div>
 </div>
@@ -437,14 +503,18 @@ function shortName(name){
 const REPO="Mistrodude/guc-deadlines",CPATH="docs/custom-events.json";
 const API=`https://api.github.com/repos/${REPO}/contents/${CPATH}`;
 let ghToken=localStorage.getItem("ghToken")||"",_sha=null,todos=[],dirty=false,pushing=null;
+let study=normStudy();
 const ghHeaders=t=>({Authorization:`token ${t}`,Accept:"application/vnd.github+json"});
 const b64enc=s=>btoa(unescape(encodeURIComponent(s)));
 const b64dec=s=>decodeURIComponent(escape(atob(s.replace(/\n/g,""))));
 
+function normStudy(x){x=x&&typeof x==="object"?x:{};return{add:x.add||{},skip:x.skip||{},done:x.done||{}}}
 function applyData(d){
   if(Array.isArray(d)){customEvents=d;todos=[];}
   else{customEvents=Array.isArray(d&&d.events)?d.events:[];todos=Array.isArray(d&&d.todos)?d.todos:[];}
+  if(d&&!Array.isArray(d)&&d.study)study=normStudy(d.study);
 }
+const userData=()=>({events:customEvents,todos,study});
 function setSyncState(cls,html){const el=$("#syncState");if(el){el.className="sync-state "+cls;el.innerHTML=html;}}
 function renderSyncState(){
   if(!ghToken)setSyncState("err",'Only on this device · <button type="button" data-connect>Connect</button>');
@@ -460,9 +530,9 @@ async function ghFetch(){
   return JSON.parse(b64dec(j.content));
 }
 async function ghPush(){
-  const body=JSON.stringify({events:customEvents,todos},null,2)+"\n";
+  const body=JSON.stringify(userData(),null,2)+"\n";
   for(let attempt=0;attempt<3;attempt++){
-    const req={message:"Update events/todos",content:b64enc(body)};
+    const req={message:"Update events/todos/study",content:b64enc(body)};
     if(_sha)req.sha=_sha;
     const r=await fetch(API,{method:"PUT",headers:{...ghHeaders(ghToken),"Content-Type":"application/json"},body:JSON.stringify(req)});
     if(r.ok){_sha=(await r.json()).content.sha;return;}
@@ -479,7 +549,7 @@ async function loadUserData(){
   if(cached)applyData(cached);
   else applyData({events:store("customEvents")||[],todos:[]});
   if(ghToken){
-    try{const d=await ghFetch();if(d)applyData(d);store("userData",{events:customEvents,todos});return;}
+    try{const d=await ghFetch();if(d)applyData(d);store("userData",userData());return;}
     catch(e){}
   }else{
     try{const r=await fetch("custom-events.json?t="+Date.now(),{cache:"no-store"});
@@ -487,7 +557,7 @@ async function loadUserData(){
   }
 }
 function saveUserData(){
-  store("userData",{events:customEvents,todos});
+  store("userData",userData());
   if(!ghToken){renderSyncState();return;}
   dirty=true;
   if(pushing)return;
@@ -502,7 +572,7 @@ async function pullRemote(){
   if(!ghToken||pushing||document.hidden)return;
   try{
     const prev=_sha,d=await ghFetch();
-    if(d&&_sha!==prev&&!pushing){applyData(d);store("userData",{events:customEvents,todos});renderAll();renderTodos();if(D){renderMeta();renderLegend();}}
+    if(d&&_sha!==prev&&!pushing){applyData(d);store("userData",userData());renderAll();renderTodos();if(D){renderMeta();renderLegend();}}
   }catch(e){}
 }
 setInterval(pullRemote,15000);
@@ -570,7 +640,7 @@ async function load(){
 }
 function startMonth(){const t=today(),v=new Date(t.getFullYear(),t.getMonth(),1);
   const last=new Date(t.getFullYear(),t.getMonth()+1,0).getDate();if(last-t.getDate()<7)v.setMonth(v.getMonth()+1);return v}
-function renderAll(){renderStrip();renderList();renderMonth();if(D)renderFeed()}
+function renderAll(){renderStrip();renderList();renderMonth();if(D)renderFeed();renderStudy()}
 
 function renderMeta(){
   const g=new Date(D.generated_at);
@@ -778,6 +848,121 @@ $("#addSave").onclick=()=>{
   if(D)renderLegend();
 };
 
+// ── Study plan ────────────────────────────────────────────────────────────────
+const STUDY_RULES=[
+  {code:"MATH301",min:2,max:3},
+  {code:"THERMO", min:1,max:2},
+  {code:"EDPT903",min:1,max:2},
+  {code:"ELCT704",min:1,max:1},
+];
+const STUDY_LABEL={MATH301:"Math",THERMO:"Thermo",EDPT903:"Design",ELCT704:"Power Electronics",
+  MCTR702:"Modern Control",ELCT708:"Electric Machines",EDPT1009:"Robotics",HUMA901:"Ethics & Law"};
+const STUDY_EXTRA=[{code:"THERMO",name:"Thermodynamics",color:"#F97316"}];
+let studyWeek=null;
+const weekStart=d=>addDays(d,-((d.getDay()+1)%7));
+function studyCourses(){
+  const list=[...STUDY_EXTRA,...(D?D.courses:[])];
+  const seen=new Set();return list.filter(c=>!seen.has(c.code)&&seen.add(c.code));
+}
+function studyLabel(code){
+  if(STUDY_LABEL[code])return STUDY_LABEL[code];
+  const c=studyCourses().find(x=>x.code===code);return c?shortName(c.name):code;
+}
+const studyColor=code=>color[code]||(STUDY_EXTRA.find(x=>x.code===code)||{}).color||"#4F46E5";
+
+function buildPlan(start){
+  const days=[];for(let i=0;i<7;i++){const ds=iso(addDays(start,i));days.push({ds,items:[]});}
+  const has=(d,c)=>d.items.some(x=>x.code===c);
+  const skipped=(ds,c)=>(study.skip[ds]||[]).includes(c);
+  const count=c=>days.filter(d=>has(d,c)).length;
+  days.forEach(d=>(study.add[d.ds]||[]).forEach(c=>{if(!has(d,c))d.items.push({code:c,why:"you"})}));
+  const tests=allEvents().filter(e=>(e.kind==="quiz"||e.kind==="exam")&&e.course);
+  days.forEach(d=>{
+    const next=iso(addDays(parse(d.ds),1));
+    tests.filter(e=>e.date===next).forEach(e=>{
+      const it=d.items.find(x=>x.code===e.course);
+      if(it){it.quiz=e.title;return}
+      if(!skipped(d.ds,e.course))d.items.push({code:e.course,why:"quiz",quiz:e.title});
+    });
+  });
+  const circ=(a,b)=>{const x=Math.abs(a-b);return Math.min(x,7-x)};
+  for(const r of STUDY_RULES){
+    while(count(r.code)<r.min){
+      const at=days.map((d,i)=>has(d,r.code)?i:-1).filter(i=>i>=0);
+      let best=-1,bs=null;
+      days.forEach((d,i)=>{
+        if(has(d,r.code)||skipped(d.ds,r.code))return;
+        const dist=at.length?Math.min(...at.map(j=>circ(i,j))):7;
+        const sc=[d.items.length,-dist,i];
+        if(!bs||sc[0]<bs[0]||(sc[0]===bs[0]&&(sc[1]<bs[1]||(sc[1]===bs[1]&&sc[2]<bs[2])))){bs=sc;best=i}
+      });
+      if(best<0)break;
+      days[best].items.push({code:r.code,why:"plan"});
+    }
+  }
+  days.forEach((d,i)=>{
+    if(d.items.length)return;
+    const adj=c=>(days[i-1]&&has(days[i-1],c))||(days[i+1]&&has(days[i+1],c));
+    const pick=STUDY_RULES.filter(r=>!skipped(d.ds,r.code))
+      .map((r,k)=>({r,k,full:count(r.code)>=r.max?1:0,ratio:count(r.code)/r.max,adj:adj(r.code)?1:0}))
+      .sort((a,b)=>a.full-b.full||a.adj-b.adj||a.ratio-b.ratio||a.k-b.k)[0];
+    if(pick)d.items.push({code:pick.r.code,why:"plan"});
+  });
+  return days;
+}
+
+function renderStudy(){
+  if(!studyWeek)studyWeek=weekStart(today());
+  const days=buildPlan(studyWeek),t=iso(today());
+  const end=addDays(studyWeek,6);
+  $("#studyRange").textContent=studyWeek.toLocaleDateString([],{day:"numeric",month:"short"})+" – "+end.toLocaleDateString([],{day:"numeric",month:"short"});
+  const n=c=>days.filter(d=>d.items.some(x=>x.code===c)).length;
+  const empty=days.filter(d=>!d.items.length).length;
+  $("#studyGoals").innerHTML=STUDY_RULES.map(r=>{const k=n(r.code);
+    return `<span class="goal ${k>=r.min?"met":"miss"}">${esc(studyLabel(r.code))} ${k}/${r.min}${k>=r.min?" ✓":""}</span>`}).join("")
+    +`<span class="goal ${empty?"miss":"met"}">Every day${empty?"":" ✓"}</span>`;
+  $("#studyDays").innerHTML=days.map(d=>{
+    const dt=parse(d.ds),done=study.done[d.ds]||[];
+    const chips=d.items.map(it=>{
+      const key=esc(d.ds+"|"+it.code),isDone=done.includes(it.code);
+      const tag=it.quiz?`<em class="stag quiz" title="${esc(it.quiz)}">Quiz tomorrow</em>`:it.why==="you"?`<em class="stag you">Added</em>`:"";
+      return `<span class="schip${isDone?" done":""}" style="--c:${studyColor(it.code)}"><button class="sname" type="button" data-sdone="${key}" aria-pressed="${isDone}">${esc(studyLabel(it.code))}</button>${tag}<button class="sx" type="button" data-sdel="${key}" aria-label="Remove">×</button></span>`;
+    }).join("");
+    return `<div class="sday${d.ds===t?" today":""}${d.ds<t?" past":""}"><div class="sdate"><b>${d.ds===t?"Today":dt.toLocaleDateString([],{weekday:"short"})}</b>${dt.toLocaleDateString([],{day:"numeric",month:"short"})}</div><div class="sitems">${chips||'<span class="sempty">Nothing planned</span>'}<button class="sadd" type="button" data-sadd="${d.ds}" aria-label="Add study session">+</button></div></div>`;
+  }).join("");
+}
+function toggleList(obj,ds,code,on){
+  const a=(obj[ds]||[]).filter(c=>c!==code);if(on)a.push(code);
+  if(a.length)obj[ds]=a;else delete obj[ds];
+}
+$("#studyDays").onclick=e=>{
+  const dn=e.target.closest("[data-sdone]"),dl=e.target.closest("[data-sdel]"),ad=e.target.closest("[data-sadd]");
+  if(dn){const[ds,c]=dn.dataset.sdone.split("|");toggleList(study.done,ds,c,!(study.done[ds]||[]).includes(c));}
+  else if(dl){const[ds,c]=dl.dataset.sdel.split("|");toggleList(study.add,ds,c,false);toggleList(study.skip,ds,c,true);toggleList(study.done,ds,c,false);}
+  else if(ad){openStudyModal(ad.dataset.sadd);return}
+  else return;
+  renderStudy();saveUserData();
+};
+$("#stPrev").onclick=()=>{studyWeek=addDays(studyWeek,-7);renderStudy()};
+$("#stNext").onclick=()=>{studyWeek=addDays(studyWeek,7);renderStudy()};
+$("#stNow").onclick=()=>{studyWeek=weekStart(today());renderStudy()};
+function openStudyModal(ds){
+  $("#sm-date").value=ds||iso(today());
+  $("#sm-course").innerHTML=studyCourses().map(c=>`<option value="${esc(c.code)}">${esc(STUDY_LABEL[c.code]||shortName(c.name))}</option>`).join("");
+  $("#studyModal").classList.add("open");
+}
+const closeStudyModal=()=>$("#studyModal").classList.remove("open");
+$("#smClose").onclick=closeStudyModal;
+$("#smCancel").onclick=closeStudyModal;
+$("#studyModal").onclick=e=>{if(e.target===$("#studyModal"))closeStudyModal()};
+$("#smSave").onclick=()=>{
+  const ds=$("#sm-date").value,c=$("#sm-course").value;if(!ds||!c)return;
+  toggleList(study.add,ds,c,true);toggleList(study.skip,ds,c,false);
+  closeStudyModal();
+  const w=weekStart(parse(ds));if(w.getTime()!==studyWeek.getTime())studyWeek=w;
+  renderStudy();saveUserData();
+};
+
 // ── Sync modal ────────────────────────────────────────────────────────────────
 $("#tokenLink").href="https://github.com/settings/personal-access-tokens/new?"+new URLSearchParams({
   name:"GUC Deadlines sync",description:"Lets the GUC Deadlines site save events and to-dos",
@@ -797,19 +982,20 @@ $("#syncSave").onclick=async()=>{
   if(!token){$("#sync-token-err").textContent="Please enter a token.";$("#sync-token-err").style.display="block";return;}
   const btn=$("#syncSave");btn.textContent="Connecting…";btn.disabled=true;
   try{
-    const localEvents=customEvents,localTodos=todos;
+    const localEvents=customEvents,localTodos=todos,localStudy=study;
     ghToken=token;
     let remote;
     try{remote=await ghFetch();}catch(err){ghToken="";throw err;}
     if(!ghToken)throw new Error("auth");
     localStorage.setItem("ghToken",token);
     applyData(remote||{events:[],todos:[]});
+    const remoteHasStudy=!!(remote&&remote.study);if(!remoteHasStudy)study=localStudy;
     const evIds=new Set(customEvents.map(x=>x.id)),tdIds=new Set(todos.map(x=>x.id));
     const extraEv=localEvents.filter(x=>!evIds.has(x.id)),extraTd=localTodos.filter(x=>!tdIds.has(x.id));
     customEvents=[...customEvents,...extraEv];todos=[...extraTd,...todos];
     closeSyncModal();updateSyncUI();renderSyncState();
     renderAll();renderTodos();if(D){renderMeta();renderLegend();}
-    if(extraEv.length||extraTd.length||!remote)saveUserData();else store("userData",{events:customEvents,todos});
+    if(extraEv.length||extraTd.length||!remote||!remoteHasStudy)saveUserData();else store("userData",userData());
   }catch(e){
     $("#sync-token-err").textContent=e.message==="auth"?"Invalid token — check permissions and expiry.":"Connection failed. Check your internet and try again.";
     $("#sync-token-err").style.display="block";
