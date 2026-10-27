@@ -521,6 +521,9 @@ def load_json(p, default):
 
 # --------------------------------------------------------------------------- main
 
+GONE_FLAG = "No longer on CMS (announcement edited or removed). Check with the course before relying on this"
+
+
 def main():
     ref = today()
     if "--save-login" in sys.argv:
@@ -590,10 +593,17 @@ def main():
             events.append(e)
         print(f"  {len(seen)} dated events, {sum(len(w['items']) for w in page['weeks'])} files")
 
-    # Keep history: past events that disappeared from CMS (announcement edited/cleared) stay.
+    # Events that disappeared from CMS stay: past ones as history, future ones flagged
+    # so a quiz is never silently dropped when an announcement is edited or removed.
     ids = {e["id"] for e in events}
     for e in prev_events.values():
-        if e["id"] not in ids and e["date"] < ref.isoformat() and e["course"] not in failed:
+        if e["id"] in ids or e["course"] in failed:
+            continue
+        if e["date"] >= ref.isoformat() and e["kind"] not in ("info", "cancelled"):
+            if GONE_FLAG not in e["flags"]:
+                e = {**e, "flags": e["flags"] + [GONE_FLAG], "flags_serious": True}
+            events.append(e)
+        elif e["date"] < ref.isoformat():
             events.append(e)
 
     events.sort(key=lambda e: (e["date"], e["time"] or "99:99", e["course"]))

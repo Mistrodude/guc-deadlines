@@ -339,7 +339,7 @@ footer{margin-top:28px;color:var(--ink-3);font-size:13px;text-align:center;line-
     </div>
     <div class="study-goals" id="studyGoals"></div>
     <div class="study-days" id="studyDays"></div>
-    <p class="study-note">Auto-planned: Math 2×, Thermo, Design and Power Electronics at least once a week, at least one subject every day, and the course of any quiz the day before it. Tap a subject to mark it done, × to remove it, + to add one.</p>
+    <p class="study-note">Auto-planned: Math 2×, Thermo, Design, Power Electronics and Modern Control at least once a week, at least one subject every day, and the course of any quiz the day before it. Tap a subject to mark it done, × to remove it, + to add one.</p>
   </section>
 
   <div class="lower">
@@ -852,12 +852,13 @@ $("#addSave").onclick=()=>{
 const STUDY_RULES=[
   {code:"MATH301",min:2,max:3},
   {code:"THERMO", min:1,max:2},
-  {code:"EDPT903",min:1,max:2},
+  {code:"DESIGN", min:1,max:2},
   {code:"ELCT704",min:1,max:1},
+  {code:"MCTR702",min:1,max:1},
 ];
-const STUDY_LABEL={MATH301:"Math",THERMO:"Thermo",EDPT903:"Design",ELCT704:"Power Electronics",
+const STUDY_LABEL={MATH301:"Math",THERMO:"Thermo",DESIGN:"Design",EDPT903:"Machine Design",ELCT704:"Power Electronics",
   MCTR702:"Modern Control",ELCT708:"Electric Machines",EDPT1009:"Robotics",HUMA901:"Ethics & Law"};
-const STUDY_EXTRA=[{code:"THERMO",name:"Thermodynamics",color:"#F97316"}];
+const STUDY_EXTRA=[{code:"THERMO",name:"Thermodynamics",color:"#F97316"},{code:"DESIGN",name:"Design",color:"#84CC16"}];
 let studyWeek=null;
 const weekStart=d=>addDays(d,-((d.getDay()+1)%7));
 function studyCourses(){
