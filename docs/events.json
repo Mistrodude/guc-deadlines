@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-27T22:54+03:00",
+ "generated_at": "2026-10-28T14:11+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-27",
+ "today": "2026-10-28",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -409,6 +409,16 @@
   }
  ],
  "items": [
+  {
+   "id": "MATH301-283017",
+   "course": "MATH301",
+   "title": "A note on Q4 of MT22",
+   "type": "Other",
+   "week": "2026-10-19",
+   "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-10-28T10_25_29.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-10-28T14:11+03:00"
+  },
   {
    "id": "MATH301-271534",
    "course": "MATH301",
