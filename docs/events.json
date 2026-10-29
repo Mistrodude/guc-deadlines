@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-28T23:07+03:00",
+ "generated_at": "2026-10-29T14:24+03:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-28",
+ "today": "2026-10-29",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -406,6 +406,25 @@
    "id": "7bf61b9e9971",
    "first_seen": "2026-09-30T17:28+03:00",
    "flags_serious": true
+  },
+  {
+   "date": "2026-11-02",
+   "time": null,
+   "kind": "info",
+   "title": "Dear all, There will be a compensation lecture on Monday 2/11/2026, fi…",
+   "where": null,
+   "text": "There will be a compensation lecture on Monday 2/11/2026, fifth slot in H13.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT708",
+   "course_name": "Electric Machines",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "id": "dbe77ba52abc",
+   "first_seen": "2026-10-29T14:24+03:00",
+   "flags_serious": false
   }
  ],
  "items": [
@@ -1710,14 +1729,14 @@
    "first_seen": "2026-09-30T17:28+03:00"
   },
   {
-   "id": "EDPT1009-275273",
+   "id": "EDPT1009-283265",
    "course": "EDPT1009",
-   "title": "Robotics Semester Plan",
+   "title": "Updated Robotics Semester Plan",
    "type": "Supplementary notes",
    "week": "2026-09-09",
-   "url": "/Uploads/70/747/71040/GUC_747_70_71040_2026-09-17T09_45_50.pdf",
+   "url": "/Uploads/70/747/71040/GUC_747_70_71040_2026-10-29T14_19_33.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
-   "first_seen": "2026-09-30T17:28+03:00"
+   "first_seen": "2026-10-29T14:24+03:00"
   },
   {
    "id": "EDPT1009-279390",
