@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-30T21:52+02:00",
+ "generated_at": "2026-10-31T12:49+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-30",
+ "today": "2026-10-31",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -408,6 +408,25 @@
    "flags_serious": true
   },
   {
+   "date": "2026-11-01",
+   "time": null,
+   "kind": "cancelled",
+   "title": "Postponed",
+   "where": null,
+   "text": "Please be informed that this week's lecture (from 1/11/2026 to 5/11/2026) will be postponed and rescheduled to a later date.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "HUMA901",
+   "course_name": "Legislation, Contracts and Engineering Ethics",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "id": "61d3468fccc9",
+   "first_seen": "2026-10-31T12:49+02:00",
+   "flags_serious": false
+  },
+  {
    "date": "2026-11-02",
    "time": null,
    "kind": "info",
@@ -425,9 +444,48 @@
    "id": "dbe77ba52abc",
    "first_seen": "2026-10-29T14:24+03:00",
    "flags_serious": false
+  },
+  {
+   "date": "2026-11-05",
+   "time": null,
+   "kind": "cancelled",
+   "title": "Postponed",
+   "where": null,
+   "text": "Please be informed that this week's lecture (from 1/11/2026 to 5/11/2026) will be postponed and rescheduled to a later date.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "HUMA901",
+   "course_name": "Legislation, Contracts and Engineering Ethics",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "id": "4582e8e499e8",
+   "first_seen": "2026-10-31T12:49+02:00",
+   "flags_serious": false
   }
  ],
  "items": [
+  {
+   "id": "MCTR702-283410",
+   "course": "MCTR702",
+   "title": "Lecture 7_Modern Control",
+   "type": "Lecture notes",
+   "week": "2026-10-31",
+   "url": "/Uploads/70/725/73640/GUC_725_70_73640_2026-10-31T09_40_26.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-10-31T12:49+02:00"
+  },
+  {
+   "id": "MCTR702-283412",
+   "course": "MCTR702",
+   "title": "Mathematica File",
+   "type": "Lecture notes",
+   "week": "2026-10-31",
+   "url": "/Uploads/70/725/73640/GUC_725_70_73640_2026-10-31T09_40_54.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-10-31T12:49+02:00"
+  },
   {
    "id": "MATH301-283017",
    "course": "MATH301",
@@ -567,26 +625,6 @@
    "url": "/Uploads/70/725/73278/GUC_725_70_73278_2026-10-17T08_59_52.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
    "first_seen": "2026-10-17T12:08+03:00"
-  },
-  {
-   "id": "HUMA901-272254",
-   "course": "HUMA901",
-   "title": "L6",
-   "type": "Lecture notes",
-   "week": "2026-10-12",
-   "url": "/Uploads/67/611/60912/GUC_611_67_60912_2025-10-22T08_07_35.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
-   "first_seen": "2026-10-25T12:41+03:00"
-  },
-  {
-   "id": "HUMA901-272255",
-   "course": "HUMA901",
-   "title": "Examples",
-   "type": "Exercise",
-   "week": "2026-10-12",
-   "url": "/Uploads/67/611/60912/GUC_611_67_60912_2025-10-22T12_48_25.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
-   "first_seen": "2026-10-25T12:41+03:00"
   },
   {
    "id": "ELCT708-281996",
