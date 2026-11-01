@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-31T21:09+02:00",
+ "generated_at": "2026-11-01T13:46+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-10-31",
+ "today": "2026-11-01",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -466,6 +466,26 @@
   }
  ],
  "items": [
+  {
+   "id": "ELCT704-283509",
+   "course": "ELCT704",
+   "title": "Sheet 4",
+   "type": "Exercise",
+   "week": "2026-10-31",
+   "url": "/Uploads/70/308/73676/GUC_308_70_73676_2026-11-01T07_07_39.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "first_seen": "2026-11-01T13:46+02:00"
+  },
+  {
+   "id": "ELCT704-283510",
+   "course": "ELCT704",
+   "title": "Sheet 4 Solution",
+   "type": "Exercise",
+   "week": "2026-10-31",
+   "url": "/Uploads/70/308/73676/GUC_308_70_73676_2026-11-01T07_07_57.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "first_seen": "2026-11-01T13:46+02:00"
+  },
   {
    "id": "MCTR702-283410",
    "course": "MCTR702",
