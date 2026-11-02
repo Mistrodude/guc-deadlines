@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-01T21:25+02:00",
+ "generated_at": "2026-11-02T15:19+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-01",
+ "today": "2026-11-02",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -462,6 +462,63 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
    "id": "4582e8e499e8",
    "first_seen": "2026-10-31T12:49+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-07",
+   "time": "15:45",
+   "kind": "info",
+   "title": "The compensation/make up days and times are for both lecture groups Sa…",
+   "where": null,
+   "text": "Saturday 7 November, 3:45-5:15pm (5th Slot), Lecture Hall 12",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "fe8e1af1bc5d",
+   "first_seen": "2026-11-02T15:19+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-14",
+   "time": "15:45",
+   "kind": "info",
+   "title": "Saturday 7 November, 3:45-5:15pm (5th Slot), Lecture Hall 12 Saturday …",
+   "where": null,
+   "text": "Saturday 14 November, 3:45-5:15pm (5th Slot), Lecture Hall 12",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "a2e8c1205ea9",
+   "first_seen": "2026-11-02T15:19+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-26",
+   "time": null,
+   "kind": "info",
+   "title": "Nikolaos plans to be out of the office during the last week of Novembe…",
+   "where": null,
+   "text": "(21-26 November 2026).",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "cf5bc85c72b7",
+   "first_seen": "2026-11-02T15:19+02:00",
    "flags_serious": false
   }
  ],
@@ -1865,6 +1922,16 @@
    "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-09-28T15_24_09.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-283856",
+   "course": "EDPT1009",
+   "title": "Milestone 3",
+   "type": "Project",
+   "week": "2026-09-07",
+   "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-11-02T14_26_30.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-02T15:19+02:00"
   },
   {
    "id": "EDPT1009-281254",
