@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T01:01+02:00",
+ "generated_at": "2026-11-03T14:43+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-03",
  "season": "Winter 2026",
@@ -481,6 +481,25 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "id": "fe8e1af1bc5d",
    "first_seen": "2026-11-02T15:19+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-09",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": null,
+   "text": "Please be informed that Quiz 2 will take place on Monday, 9 November 2026 .",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "EDPT903",
+   "course_name": "Machine Design",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "id": "62c5e7fbb6dd",
+   "first_seen": "2026-11-03T14:43+02:00",
    "flags_serious": false
   },
   {
