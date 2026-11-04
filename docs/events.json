@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-03T22:50+02:00",
+ "generated_at": "2026-11-04T14:52+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-03",
+ "today": "2026-11-04",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -468,7 +468,7 @@
    "date": "2026-11-07",
    "time": "15:45",
    "kind": "info",
-   "title": "The compensation/make up days and times are for both lecture groups Sa…",
+   "title": "be taught during that week. Saturday 7 November, 3:45-5:15pm (5th Slot…",
    "where": null,
    "text": "Saturday 7 November, 3:45-5:15pm (5th Slot), Lecture Hall 12",
    "source": "Course announcement",
@@ -479,8 +479,8 @@
    "course": "MATH301",
    "course_name": "Mathematics III",
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
-   "id": "fe8e1af1bc5d",
-   "first_seen": "2026-11-02T15:19+02:00",
+   "id": "67d76baa6372",
+   "first_seen": "2026-11-04T14:52+02:00",
    "flags_serious": false
   },
   {
@@ -522,10 +522,67 @@
    "flags_serious": false
   },
   {
+   "date": "2026-11-17",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": null,
+   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "50a3be53b693",
+   "first_seen": "2026-11-04T14:52+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-19",
+   "time": null,
+   "kind": "project",
+   "title": "Milestone 2 due",
+   "where": null,
+   "text": "Kindly note that the deadline for Project Milestone 2 will be on Thursday 19/11/2026.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "EDPT903",
+   "course_name": "Machine Design",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "id": "bf3c2355ef7c",
+   "first_seen": "2026-11-04T14:52+02:00",
+   "flags_serious": false
+  },
+  {
    "date": "2026-11-26",
    "time": null,
    "kind": "info",
-   "title": "Nikolaos plans to be out of the office during the last week of Novembe…",
+   "title": "Save this to your calendar. Prof Nikolaos plans to be out of the offic…",
+   "where": null,
+   "text": "Prof Nikolaos plans to be out of the office during the last week of November (21-26 November 2026).",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "90101b12f2a9",
+   "first_seen": "2026-11-04T14:52+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-26",
+   "time": null,
+   "kind": "info",
+   "title": "Prof Nikolaos plans to be out of the office during the last week of No…",
    "where": null,
    "text": "(21-26 November 2026).",
    "source": "Course announcement",
@@ -536,8 +593,46 @@
    "course": "MATH301",
    "course_name": "Mathematics III",
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
-   "id": "cf5bc85c72b7",
-   "first_seen": "2026-11-02T15:19+02:00",
+   "id": "68b725a3aa64",
+   "first_seen": "2026-11-04T14:52+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-30",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": null,
+   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "4f91981e3c55",
+   "first_seen": "2026-11-04T14:52+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-12-01",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": null,
+   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "ed63b0bb9c3c",
+   "first_seen": "2026-11-04T14:52+02:00",
    "flags_serious": false
   }
  ],
