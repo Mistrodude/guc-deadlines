@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-06T22:43+02:00",
+ "generated_at": "2026-11-07T13:37+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-06",
+ "today": "2026-11-07",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -541,6 +541,25 @@
    "flags_serious": false
   },
   {
+   "date": "2026-11-14",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz",
+   "where": "C7.01, C7.02",
+   "text": "The second quiz for Modern Control (Q2) will be held on Saturday, 14 November 2026 , during the 5th lecture, in C7.01 and C7.02 .",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MCTR702",
+   "course_name": "Modern Control Engineering",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "id": "4503fb6f8a16",
+   "first_seen": "2026-11-07T13:37+02:00",
+   "flags_serious": false
+  },
+  {
    "date": "2026-11-17",
    "time": null,
    "kind": "quiz",
@@ -656,6 +675,36 @@
   }
  ],
  "items": [
+  {
+   "id": "MCTR702-284708",
+   "course": "MCTR702",
+   "title": "Lecture 8_Modern Control",
+   "type": "Lecture notes",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/725/74040/GUC_725_70_74040_2026-11-07T09_55_38.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-07T13:37+02:00"
+  },
+  {
+   "id": "MCTR702-284709",
+   "course": "MCTR702",
+   "title": "Mathematica files",
+   "type": "Other",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/725/74040/GUC_725_70_74040_2026-11-07T09_56_26.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-07T13:37+02:00"
+  },
+  {
+   "id": "MCTR702-284710",
+   "course": "MCTR702",
+   "title": "Announcement Modern Control Q 2",
+   "type": "Quiz",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/725/74040/GUC_725_70_74040_2026-11-07T10_02_27.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-07T13:37+02:00"
+  },
   {
    "id": "ELCT704-284256",
    "course": "ELCT704",
