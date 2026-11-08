@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-07T21:16+02:00",
+ "generated_at": "2026-11-08T13:49+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-07",
+ "today": "2026-11-08",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -560,12 +560,12 @@
    "flags_serious": false
   },
   {
-   "date": "2026-11-17",
+   "date": "2026-11-16",
    "time": null,
    "kind": "quiz",
    "title": "Quiz 2",
    "where": null,
-   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "text": "Quiz 2 will be held on Monday November 16 th and Tuesday November 18 th , 3:30-5:15.",
    "source": "Course announcement",
    "flags": [],
    "by": [
@@ -574,9 +574,51 @@
    "course": "MATH301",
    "course_name": "Mathematics III",
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "02b556e09fb0",
+   "first_seen": "2026-11-08T13:49+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-17",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": null,
+   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "source": "Course announcement",
+   "flags": [
+    "No longer on CMS (announcement edited or removed). Check with the course before relying on this"
+   ],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "id": "50a3be53b693",
    "first_seen": "2026-11-04T14:52+02:00",
-   "flags_serious": false
+   "flags_serious": true
+  },
+  {
+   "date": "2026-11-18",
+   "time": "15:30",
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": null,
+   "text": "Quiz 2 will be held on Monday November 16 th and Tuesday November 18 th , 3:30-5:15.",
+   "source": "Course announcement",
+   "flags": [
+    "says Tuesday but 18 Nov is a Wednesday"
+   ],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "b4c1156bfbfd",
+   "first_seen": "2026-11-08T13:49+02:00",
+   "flags_serious": true
   },
   {
    "date": "2026-11-19",
@@ -639,9 +681,9 @@
    "date": "2026-11-30",
    "time": null,
    "kind": "quiz",
-   "title": "Quiz 2",
+   "title": "Quiz 3",
    "where": null,
-   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "text": "Quiz 3 will be on Mon 30/11 and Tue 1/12.",
    "source": "Course announcement",
    "flags": [],
    "by": [
@@ -650,8 +692,48 @@
    "course": "MATH301",
    "course_name": "Mathematics III",
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "df22c45b7878",
+   "first_seen": "2026-11-08T13:49+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-30",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": null,
+   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "source": "Course announcement",
+   "flags": [
+    "No longer on CMS (announcement edited or removed). Check with the course before relying on this"
+   ],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "id": "4f91981e3c55",
    "first_seen": "2026-11-04T14:52+02:00",
+   "flags_serious": true
+  },
+  {
+   "date": "2026-12-01",
+   "time": null,
+   "kind": "quiz",
+   "title": "Quiz 3",
+   "where": null,
+   "text": "Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "40e52711fade",
+   "first_seen": "2026-11-08T13:49+02:00",
    "flags_serious": false
   },
   {
@@ -662,7 +744,9 @@
    "where": null,
    "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
    "source": "Course announcement",
-   "flags": [],
+   "flags": [
+    "No longer on CMS (announcement edited or removed). Check with the course before relying on this"
+   ],
    "by": [
     "rules"
    ],
@@ -671,10 +755,30 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "id": "ed63b0bb9c3c",
    "first_seen": "2026-11-04T14:52+02:00",
-   "flags_serious": false
+   "flags_serious": true
   }
  ],
  "items": [
+  {
+   "id": "ELCT704-284868",
+   "course": "ELCT704",
+   "title": "Sheet 5",
+   "type": "Exercise",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/308/74081/GUC_308_70_74081_2026-11-08T09_08_13.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "first_seen": "2026-11-08T13:49+02:00"
+  },
+  {
+   "id": "ELCT704-284869",
+   "course": "ELCT704",
+   "title": "Sheet 5 Solution",
+   "type": "Exercise",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/308/74081/GUC_308_70_74081_2026-11-08T09_08_34.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "first_seen": "2026-11-08T13:49+02:00"
+  },
   {
    "id": "MCTR702-284708",
    "course": "MCTR702",
@@ -704,6 +808,46 @@
    "url": "/Uploads/70/725/74040/GUC_725_70_74040_2026-11-07T10_02_27.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
    "first_seen": "2026-11-07T13:37+02:00"
+  },
+  {
+   "id": "MATH301-271483",
+   "course": "MATH301",
+   "title": "Lecture 13",
+   "type": "Lecture slides",
+   "week": "2026-10-31",
+   "url": "/Uploads/64/45/46279/GUC_45_64_46279_2024-10-07T09_42_47.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-08T13:49+02:00"
+  },
+  {
+   "id": "MATH301-271484",
+   "course": "MATH301",
+   "title": "Lecture 14",
+   "type": "Lecture slides",
+   "week": "2026-10-31",
+   "url": "/Uploads/64/45/46279/GUC_45_64_46279_2024-10-07T09_43_17.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-08T13:49+02:00"
+  },
+  {
+   "id": "MATH301-271485",
+   "course": "MATH301",
+   "title": "Worksheet 7",
+   "type": "Assignment",
+   "week": "2026-10-31",
+   "url": "/Uploads/64/45/46279/GUC_45_64_46279_2024-11-09T13_42_09.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-08T13:49+02:00"
+  },
+  {
+   "id": "MATH301-271486",
+   "course": "MATH301",
+   "title": "Worksheet 7-solution(updated)",
+   "type": "Assignment solution",
+   "week": "2026-10-31",
+   "url": "/Uploads/64/45/46279/GUC_45_64_46279_2024-11-18T13_47_15.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-08T13:49+02:00"
   },
   {
    "id": "ELCT704-284256",
