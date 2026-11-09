@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-08T21:24+02:00",
+ "generated_at": "2026-11-09T15:44+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-08",
+ "today": "2026-11-09",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -522,6 +522,25 @@
    "flags_serious": false
   },
   {
+   "date": "2026-11-12",
+   "time": "15:45",
+   "kind": "info",
+   "title": "----------------------------------------------------------- To the stu…",
+   "where": null,
+   "text": "To the students of MET/IET Lecture Group 2: We have an extra lecture this Thur 12/11 at 3:45 in H10.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "MATH301",
+   "course_name": "Mathematics III",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "id": "88d250e22468",
+   "first_seen": "2026-11-09T15:44+02:00",
+   "flags_serious": false
+  },
+  {
    "date": "2026-11-14",
    "time": "15:45",
    "kind": "info",
@@ -643,7 +662,7 @@
    "date": "2026-11-26",
    "time": null,
    "kind": "info",
-   "title": "Save this to your calendar. Prof Nikolaos plans to be out of the offic…",
+   "title": "----------------------------------------------------------------------…",
    "where": null,
    "text": "Prof Nikolaos plans to be out of the office during the last week of November (21-26 November 2026).",
    "source": "Course announcement",
@@ -654,8 +673,8 @@
    "course": "MATH301",
    "course_name": "Mathematics III",
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
-   "id": "90101b12f2a9",
-   "first_seen": "2026-11-04T14:52+02:00",
+   "id": "656fc82bbf0b",
+   "first_seen": "2026-11-09T15:44+02:00",
    "flags_serious": false
   },
   {
@@ -759,6 +778,26 @@
   }
  ],
  "items": [
+  {
+   "id": "ELCT708-285151",
+   "course": "ELCT708",
+   "title": "Sheet 6",
+   "type": "Tutorial notes",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/723/74191/GUC_723_70_74191_2026-11-09T13_05_56.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-11-09T15:44+02:00"
+  },
+  {
+   "id": "ELCT708-285183",
+   "course": "ELCT708",
+   "title": "Lecture 8",
+   "type": "Lecture slides",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/723/74191/GUC_723_70_74191_2026-11-09T15_18_52.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-11-09T15:44+02:00"
+  },
   {
    "id": "ELCT704-284868",
    "course": "ELCT704",
