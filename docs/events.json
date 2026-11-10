@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T01:42+02:00",
+ "generated_at": "2026-11-10T15:23+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-10",
  "season": "Winter 2026",
@@ -779,6 +779,16 @@
  ],
  "items": [
   {
+   "id": "MCTR702-285331",
+   "course": "MCTR702",
+   "title": "Tutorial 7 Slides",
+   "type": "Tutorial notes",
+   "week": "2026-11-07",
+   "url": "/Uploads/52/725/4083/GUC_725_52_4083_2020-12-14T18_52_52.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-10T15:23+02:00"
+  },
+  {
    "id": "ELCT708-285151",
    "course": "ELCT708",
    "title": "Sheet 6",
@@ -847,6 +857,36 @@
    "url": "/Uploads/70/725/74040/GUC_725_70_74040_2026-11-07T10_02_27.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
    "first_seen": "2026-11-07T13:37+02:00"
+  },
+  {
+   "id": "HUMA901-285251",
+   "course": "HUMA901",
+   "title": "L7",
+   "type": "Lecture notes",
+   "week": "2026-10-31",
+   "url": "/Uploads/70/611/70438/GUC_611_70_70438_2026-11-10T07_31_23.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "first_seen": "2026-11-10T15:23+02:00"
+  },
+  {
+   "id": "HUMA901-285252",
+   "course": "HUMA901",
+   "title": "PROJECT",
+   "type": "Project",
+   "week": "2026-10-31",
+   "url": "/Uploads/70/611/70438/GUC_611_70_70438_2026-11-10T07_32_42.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "first_seen": "2026-11-10T15:23+02:00"
+  },
+  {
+   "id": "MCTR702-285332",
+   "course": "MCTR702",
+   "title": "Tutorial 6",
+   "type": "Tutorial notes",
+   "week": "2026-10-31",
+   "url": "/Uploads/67/725/61648/GUC_725_67_61648_2025-11-10T16_59_40.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-10T15:23+02:00"
   },
   {
    "id": "MATH301-271483",
@@ -1921,7 +1961,7 @@
   {
    "id": "EDPT903-273662",
    "course": "EDPT903",
-   "title": "Matlab Notes",
+   "title": "Matlab Notes - Milestone 2",
    "type": "Project",
    "week": "2026-09-13",
    "url": "/Uploads/64/570/50328/GUC_570_64_50328_2024-11-17T16_06_04.pdf",
