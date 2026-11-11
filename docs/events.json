@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T14:34+02:00",
+ "generated_at": "2026-11-11T23:47+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-11",
  "season": "Winter 2026",
@@ -565,7 +565,7 @@
    "kind": "assignment",
    "title": "Assignment due",
    "where": null,
-   "text": "Please ntoe that the second in class assignment will be next week ( starting Saturday 14/11/2026 ) during the tutorial.",
+   "text": "Please note that the second in class assignment will be next week ( starting Saturday 14/11/2026 ) during the tutorial.",
    "source": "Course announcement",
    "flags": [],
    "by": [
@@ -2644,6 +2644,46 @@
    "url": "/Uploads/70/747/71034/GUC_747_70_71034_2026-09-24T17_58_04.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-285770",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L06_kinematics Finalized",
+   "type": "Lecture slides",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71036/GUC_747_70_71036_2026-11-11T22_21_43.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-11T23:47+02:00"
+  },
+  {
+   "id": "EDPT1009-285766",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L07_Trajectory Planning",
+   "type": "Lecture slides",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71036/GUC_747_70_71036_2026-11-11T21_07_32.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-11T23:47+02:00"
+  },
+  {
+   "id": "EDPT1009-285767",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L08_Control Architecture",
+   "type": "Lecture slides",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71036/GUC_747_70_71036_2026-11-11T21_08_24.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-11T23:47+02:00"
+  },
+  {
+   "id": "EDPT1009-285768",
+   "course": "EDPT1009",
+   "title": "EDPT1009_Robotics-L07_Trajectory Planning-VoD",
+   "type": "VoD",
+   "week": "2026-09-05",
+   "url": "/Uploads/70/747/71588/GUC_747_70_71588_2026-11-11T21_24_03.mp4",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-11T23:47+02:00"
   },
   {
    "id": "MATH301-285604",
