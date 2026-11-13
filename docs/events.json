@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T14:57+02:00",
+ "generated_at": "2026-11-13T23:16+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-13",
  "season": "Winter 2026",
@@ -1114,6 +1114,26 @@
    "url": "/Uploads/70/725/74040/GUC_725_70_74040_2026-11-07T10_02_27.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
    "first_seen": "2026-11-07T13:37+02:00"
+  },
+  {
+   "id": "MATH301-271488",
+   "course": "MATH301",
+   "title": "Tutorial 13 Video",
+   "type": "VoD",
+   "week": "2026-10-31",
+   "url": "/Uploads/52/45/851/GUC_45_52_851_2020-11-16T12_58_13.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-13T23:16+02:00"
+  },
+  {
+   "id": "MATH301-271489",
+   "course": "MATH301",
+   "title": "Tutorial 14 Video",
+   "type": "VoD",
+   "week": "2026-10-31",
+   "url": "/Uploads/52/45/851/GUC_45_52_851_2020-11-16T13_07_55.m4v",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-13T23:16+02:00"
   },
   {
    "id": "HUMA901-285251",
