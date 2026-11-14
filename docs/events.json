@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-13T23:16+02:00",
+ "generated_at": "2026-11-14T14:00+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-13",
+ "today": "2026-11-14",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -641,7 +641,7 @@
    "kind": "quiz",
    "title": "Quiz 2",
    "where": null,
-   "text": "Quiz 2 will be held on Monday November 16 th and Tuesday November 18 th , 3:30-5:15.",
+   "text": "Quiz 2 will be held on Monday November 16 th and Tuesday November 17 th .",
    "source": "Course announcement",
    "flags": [],
    "by": [
@@ -660,11 +660,9 @@
    "kind": "quiz",
    "title": "Quiz 2",
    "where": null,
-   "text": "Quiz 2 will be on Tue 17/11, and Quiz 3 will be on Mon 30/11 and Tue 1/12.",
+   "text": "Quiz 2 will be held on Monday November 16 th and Tuesday November 17 th .",
    "source": "Course announcement",
-   "flags": [
-    "No longer on CMS (announcement edited or removed). Check with the course before relying on this"
-   ],
+   "flags": [],
    "by": [
     "rules"
    ],
@@ -673,7 +671,7 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "id": "50a3be53b693",
    "first_seen": "2026-11-04T14:52+02:00",
-   "flags_serious": true
+   "flags_serious": false
   },
   {
    "date": "2026-11-18",
@@ -684,7 +682,8 @@
    "text": "Quiz 2 will be held on Monday November 16 th and Tuesday November 18 th , 3:30-5:15.",
    "source": "Course announcement",
    "flags": [
-    "says Tuesday but 18 Nov is a Wednesday"
+    "says Tuesday but 18 Nov is a Wednesday",
+    "No longer on CMS (announcement edited or removed). Check with the course before relying on this"
    ],
    "by": [
     "rules"
@@ -954,6 +953,36 @@
    "url": "/Uploads/70/45/70204/GUC_45_70_70204_2026-11-11T09_24_44.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
+  },
+  {
+   "id": "MCTR702-286087",
+   "course": "MCTR702",
+   "title": "Lecture 9_Modern Control",
+   "type": "Lecture notes",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/725/74428/GUC_725_70_74428_2026-11-14T09_52_03.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-14T14:00+02:00"
+  },
+  {
+   "id": "MCTR702-286088",
+   "course": "MCTR702",
+   "title": "Mathematica File 1",
+   "type": "Other",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/725/74428/GUC_725_70_74428_2026-11-14T09_52_23.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-14T14:00+02:00"
+  },
+  {
+   "id": "MCTR702-286089",
+   "course": "MCTR702",
+   "title": "Mathematica Files 2",
+   "type": "Other",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/725/74428/GUC_725_70_74428_2026-11-14T09_52_35.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-14T14:00+02:00"
   },
   {
    "id": "MATH301-271490",
