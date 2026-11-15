@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-14T21:48+02:00",
+ "generated_at": "2026-11-15T14:37+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-14",
+ "today": "2026-11-15",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -835,6 +835,16 @@
  ],
  "items": [
   {
+   "id": "MATH301-286316",
+   "course": "MATH301",
+   "title": "Solution of Worksheet 10",
+   "type": "Exercise",
+   "week": "2026-11-23",
+   "url": "/Uploads/70/45/70205/GUC_45_70_70205_2026-11-15T12_29_05.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-15T14:37+02:00"
+  },
+  {
    "id": "MATH301-285548",
    "course": "MATH301",
    "title": "Lecture 19",
@@ -881,16 +891,6 @@
    "type": "Exercise",
    "week": "2026-11-23",
    "url": "/Uploads/70/45/70205/GUC_45_70_70205_2026-11-11T09_53_49.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
-   "first_seen": "2026-11-12T15:39+02:00"
-  },
-  {
-   "id": "MATH301-285553",
-   "course": "MATH301",
-   "title": "Solution of Worksheet 10",
-   "type": "Exercise",
-   "week": "2026-11-23",
-   "url": "/Uploads/70/45/70205/GUC_45_70_70205_2026-11-11T09_52_47.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
   },
@@ -985,6 +985,16 @@
    "first_seen": "2026-11-14T14:00+02:00"
   },
   {
+   "id": "MATH301-286314",
+   "course": "MATH301",
+   "title": "Solution of Worksheet 8",
+   "type": "Exercise",
+   "week": "2026-11-09",
+   "url": "/Uploads/70/45/70203/GUC_45_70_70203_2026-11-15T12_20_23.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-15T14:37+02:00"
+  },
+  {
    "id": "MATH301-271490",
    "course": "MATH301",
    "title": "Lecture 15",
@@ -1021,16 +1031,6 @@
    "type": "Exercise",
    "week": "2026-11-09",
    "url": "/Uploads/70/45/70203/GUC_45_70_70203_2026-11-11T08_51_28.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
-   "first_seen": "2026-11-12T15:39+02:00"
-  },
-  {
-   "id": "MATH301-285519",
-   "course": "MATH301",
-   "title": "Solution of Worksheet 8",
-   "type": "Exercise",
-   "week": "2026-11-09",
-   "url": "/Uploads/70/45/70203/GUC_45_70_70203_2026-11-11T08_51_56.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
   },
