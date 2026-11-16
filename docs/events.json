@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-15T22:13+02:00",
+ "generated_at": "2026-11-16T15:29+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-15",
+ "today": "2026-11-16",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -953,6 +953,26 @@
    "url": "/Uploads/70/45/70204/GUC_45_70_70204_2026-11-11T09_24_44.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
+  },
+  {
+   "id": "ELCT708-286582",
+   "course": "ELCT708",
+   "title": "Sheet 7",
+   "type": "Tutorial notes",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/723/74589/GUC_723_70_74589_2026-11-16T13_50_14.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-11-16T15:29+02:00"
+  },
+  {
+   "id": "ELCT708-286583",
+   "course": "ELCT708",
+   "title": "Sheet 7 Solution",
+   "type": "Tutorial notes",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/723/74589/GUC_723_70_74589_2026-11-16T13_50_28.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-11-16T15:29+02:00"
   },
   {
    "id": "MCTR702-286087",
