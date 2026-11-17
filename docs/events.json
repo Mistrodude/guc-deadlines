@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T01:40+02:00",
+ "generated_at": "2026-11-17T16:14+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-17",
  "season": "Winter 2026",
@@ -715,6 +715,44 @@
    "flags_serious": false
   },
   {
+   "date": "2026-11-21",
+   "time": "15:45",
+   "kind": "quiz",
+   "title": "Quiz 2",
+   "where": "C7.01, C7.02",
+   "text": "Quiz 2 will be on Saturday 21/11 at 3:45 pm in C7.01 - C7.02.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT708",
+   "course_name": "Electric Machines",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "id": "3586bcf430a3",
+   "first_seen": "2026-11-17T16:14+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-23",
+   "time": null,
+   "kind": "cancelled",
+   "title": "No lecture",
+   "where": null,
+   "text": "There will be no lecture on Monday 23/11.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT708",
+   "course_name": "Electric Machines",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "id": "b701997af937",
+   "first_seen": "2026-11-17T16:14+02:00",
+   "flags_serious": false
+  },
+  {
    "date": "2026-11-26",
    "time": null,
    "kind": "info",
@@ -955,6 +993,26 @@
    "first_seen": "2026-11-12T15:39+02:00"
   },
   {
+   "id": "HUMA901-286659",
+   "course": "HUMA901",
+   "title": "L9",
+   "type": "Lecture notes",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/611/70440/GUC_611_70_70440_2026-11-17T07_28_18.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "first_seen": "2026-11-17T16:14+02:00"
+  },
+  {
+   "id": "ELCT708-286675",
+   "course": "ELCT708",
+   "title": "Lecture 9",
+   "type": "Lecture slides",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/723/74589/GUC_723_70_74589_2026-11-17T08_49_13.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-11-17T16:14+02:00"
+  },
+  {
    "id": "ELCT708-286582",
    "course": "ELCT708",
    "title": "Sheet 7",
@@ -1053,6 +1111,16 @@
    "url": "/Uploads/70/45/70203/GUC_45_70_70203_2026-11-11T08_51_28.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
+  },
+  {
+   "id": "HUMA901-285253",
+   "course": "HUMA901",
+   "title": "L8",
+   "type": "Lecture notes",
+   "week": "2026-11-07",
+   "url": "/Uploads/70/611/70439/GUC_611_70_70439_2026-11-10T07_33_48.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=611&sid=70",
+   "first_seen": "2026-11-17T16:14+02:00"
   },
   {
    "id": "ELCT704-285784",
