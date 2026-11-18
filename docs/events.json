@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T00:48+02:00",
+ "generated_at": "2026-11-18T15:45+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-18",
  "season": "Winter 2026",
@@ -735,6 +735,25 @@
   },
   {
    "date": "2026-11-23",
+   "time": "16:00",
+   "kind": "quiz",
+   "title": "Quiz 3",
+   "where": "C7.01, C7.02",
+   "text": "This is to inform you that quiz 3 will be held on Monday, 23th of November 2026 , from 4:00 PM to 5:00 PM , in C7.01 and C7.02",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "EDPT903",
+   "course_name": "Machine Design",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "id": "384fc25f4660",
+   "first_seen": "2026-11-18T15:45+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-23",
    "time": null,
    "kind": "cancelled",
    "title": "No lecture",
@@ -750,6 +769,25 @@
    "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
    "id": "b701997af937",
    "first_seen": "2026-11-17T16:14+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-11-25",
+   "time": null,
+   "kind": "cancelled",
+   "title": "No lecture",
+   "where": null,
+   "text": "There will be no lecture on Wednesday 25/11.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT704",
+   "course_name": "Power Electronics",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "id": "84d118490f2e",
+   "first_seen": "2026-11-18T15:45+02:00",
    "flags_serious": false
   },
   {
@@ -869,6 +907,44 @@
    "id": "ed63b0bb9c3c",
    "first_seen": "2026-11-04T14:52+02:00",
    "flags_serious": true
+  },
+  {
+   "date": "2026-12-03",
+   "time": "15:30",
+   "kind": "project",
+   "title": "Project deadline",
+   "where": null,
+   "text": "The project deadline is extended to Monday 14th of December 3:30 pm",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT704",
+   "course_name": "Power Electronics",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "id": "4401f009871f",
+   "first_seen": "2026-11-18T15:45+02:00",
+   "flags_serious": false
+  },
+  {
+   "date": "2026-12-14",
+   "time": null,
+   "kind": "project",
+   "title": "Project deadline",
+   "where": null,
+   "text": "The project deadline is extended to Monday 14th of December 3:30 pm",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT704",
+   "course_name": "Power Electronics",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "id": "a142837255ad",
+   "first_seen": "2026-11-18T15:45+02:00",
+   "flags_serious": false
   }
  ],
  "items": [
@@ -991,6 +1067,16 @@
    "url": "/Uploads/70/45/70204/GUC_45_70_70204_2026-11-11T09_24_44.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
+  },
+  {
+   "id": "ELCT708-286950",
+   "course": "ELCT708",
+   "title": "Assignment 2",
+   "type": "Assignment",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/723/74589/GUC_723_70_74589_2026-11-18T15_26_04.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "first_seen": "2026-11-18T15:45+02:00"
   },
   {
    "id": "HUMA901-286659",
@@ -2133,6 +2219,26 @@
    "first_seen": "2026-09-30T17:28+03:00"
   },
   {
+   "id": "EDPT903-286873",
+   "course": "EDPT903",
+   "title": "Lecture 9 VoD",
+   "type": "VoD",
+   "week": "2026-09-13",
+   "url": "/Uploads/70/570/70991/GUC_570_70_70991_2026-11-18T09_41_50.mp4",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "first_seen": "2026-11-18T15:45+02:00"
+  },
+  {
+   "id": "EDPT903-286874",
+   "course": "EDPT903",
+   "title": "Lecture 9 VoD",
+   "type": "VoD",
+   "week": "2026-09-13",
+   "url": "/Uploads/70/570/70991/GUC_570_70_70991_2026-11-18T09_50_36.mp4",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "first_seen": "2026-11-18T15:45+02:00"
+  },
+  {
    "id": "EDPT903-281953",
    "course": "EDPT903",
    "title": "Mechanisms - (Updated)",
@@ -2691,6 +2797,16 @@
    "url": "/Uploads/70/747/71040/GUC_747_70_71040_2026-10-29T14_19_33.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-10-29T14:24+03:00"
+  },
+  {
+   "id": "EDPT1009-286936",
+   "course": "EDPT1009",
+   "title": "RED Submission 2 Evaluations Timetable",
+   "type": "Supplementary notes",
+   "week": "2026-09-08",
+   "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-11-18T14_14_59.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-18T15:45+02:00"
   },
   {
    "id": "EDPT1009-286419",
