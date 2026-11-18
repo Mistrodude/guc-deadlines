@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-18T15:45+02:00",
+ "generated_at": "2026-11-19T00:30+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-18",
+ "today": "2026-11-19",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -1067,6 +1067,16 @@
    "url": "/Uploads/70/45/70204/GUC_45_70_70204_2026-11-11T09_24_44.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
+  },
+  {
+   "id": "ELCT704-286972",
+   "course": "ELCT704",
+   "title": "Lecture 8",
+   "type": "Lecture slides",
+   "week": "2026-11-14",
+   "url": "/Uploads/70/308/74719/GUC_308_70_74719_2026-11-18T17_12_48.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "first_seen": "2026-11-19T00:30+02:00"
   },
   {
    "id": "ELCT708-286950",
@@ -2997,6 +3007,16 @@
    "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-09-22T14_02_55.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-286990",
+   "course": "EDPT1009",
+   "title": "Tutorial 8 - Joint Space Trajectory Planning",
+   "type": "Tutorial notes",
+   "week": "2026-09-06",
+   "url": "/Uploads/70/747/71034/GUC_747_70_71034_2026-11-18T17_47_10.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-19T00:30+02:00"
   },
   {
    "id": "EDPT1009-285637",
