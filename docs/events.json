@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-21T22:49+02:00",
+ "generated_at": "2026-11-22T15:11+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-21",
+ "today": "2026-11-22",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -1007,6 +1007,26 @@
    "url": "/Uploads/70/45/70205/GUC_45_70_70205_2026-11-11T09_53_49.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
+  },
+  {
+   "id": "ELCT704-287492",
+   "course": "ELCT704",
+   "title": "Sheet 6",
+   "type": "Exercise",
+   "week": "2026-11-21",
+   "url": "/Uploads/70/308/74865/GUC_308_70_74865_2026-11-22T11_36_21.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "first_seen": "2026-11-22T15:11+02:00"
+  },
+  {
+   "id": "ELCT704-287493",
+   "course": "ELCT704",
+   "title": "Sheet 6 Solution",
+   "type": "Exercise",
+   "week": "2026-11-21",
+   "url": "/Uploads/70/308/74865/GUC_308_70_74865_2026-11-22T11_36_44.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
+   "first_seen": "2026-11-22T15:11+02:00"
   },
   {
    "id": "MATH301-285521",
@@ -2229,6 +2249,16 @@
    "first_seen": "2026-09-30T17:28+03:00"
   },
   {
+   "id": "EDPT903-287574",
+   "course": "EDPT903",
+   "title": "tutorial 7 solution",
+   "type": "Tutorial notes",
+   "week": "2026-09-13",
+   "url": "/Uploads/70/570/70990/GUC_570_70_70990_2026-11-22T14_47_31.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=570&sid=70",
+   "first_seen": "2026-11-22T15:11+02:00"
+  },
+  {
    "id": "EDPT903-286873",
    "course": "EDPT903",
    "title": "Lecture 9 VoD",
@@ -2897,6 +2927,16 @@
    "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-09-28T15_24_09.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-287579",
+   "course": "EDPT1009",
+   "title": "Milestone 4 Project",
+   "type": "Assignment",
+   "week": "2026-09-07",
+   "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-11-22T15_03_40.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-22T15:11+02:00"
   },
   {
    "id": "EDPT1009-283856",
