@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-22T22:57+02:00",
+ "generated_at": "2026-11-23T17:49+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
- "today": "2026-11-22",
+ "today": "2026-11-23",
  "season": "Winter 2026",
  "failed_courses": [],
  "ai_check": false,
@@ -1009,6 +1009,16 @@
    "first_seen": "2026-11-12T15:39+02:00"
   },
   {
+   "id": "MCTR702-287844",
+   "course": "MCTR702",
+   "title": "Lecture 10_Modern Control",
+   "type": "Lecture notes",
+   "week": "2026-11-21",
+   "url": "/Uploads/70/725/74947/GUC_725_70_74947_2026-11-23T13_31_29.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-23T17:49+02:00"
+  },
+  {
    "id": "ELCT704-287492",
    "course": "ELCT704",
    "title": "Sheet 6",
@@ -1027,6 +1037,16 @@
    "url": "/Uploads/70/308/74865/GUC_308_70_74865_2026-11-22T11_36_44.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=308&sid=70",
    "first_seen": "2026-11-22T15:11+02:00"
+  },
+  {
+   "id": "MATH301-287735",
+   "course": "MATH301",
+   "title": "Worksheet 9",
+   "type": "Exercise",
+   "week": "2026-11-16",
+   "url": "/Uploads/70/45/70204/GUC_45_70_70204_2026-11-23T12_02_17.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-23T17:49+02:00"
   },
   {
    "id": "MATH301-285521",
@@ -1065,16 +1085,6 @@
    "type": "Lecture slides",
    "week": "2026-11-16",
    "url": "/Uploads/70/45/70204/GUC_45_70_70204_2026-11-11T09_23_13.pdf",
-   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
-   "first_seen": "2026-11-12T15:39+02:00"
-  },
-  {
-   "id": "MATH301-285534",
-   "course": "MATH301",
-   "title": "Worksheet 9",
-   "type": "Exercise",
-   "week": "2026-11-16",
-   "url": "/Uploads/70/45/70204/GUC_45_70_70204_2026-11-11T09_25_46.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
    "first_seen": "2026-11-12T15:39+02:00"
   },
