@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T01:47+02:00",
+ "generated_at": "2026-11-25T17:24+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-25",
  "season": "Winter 2026",
@@ -829,6 +829,25 @@
    "flags_serious": false
   },
   {
+   "date": "2026-11-28",
+   "time": null,
+   "kind": "assignment",
+   "title": "Assignment 2",
+   "where": null,
+   "text": "Kindly note that assignment 2 will be held in class during next week's tutorials starting Saturday 28th of November 2026.",
+   "source": "Course announcement",
+   "flags": [],
+   "by": [
+    "rules"
+   ],
+   "course": "ELCT708",
+   "course_name": "Electric Machines",
+   "url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=723&sid=70",
+   "id": "5931f5039cd0",
+   "first_seen": "2026-11-25T17:24+02:00",
+   "flags_serious": false
+  },
+  {
    "date": "2026-11-30",
    "time": null,
    "kind": "quiz",
@@ -1527,6 +1546,36 @@
    "url": "/Uploads/70/725/73640/GUC_725_70_73640_2026-10-31T09_40_54.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
    "first_seen": "2026-10-31T12:49+02:00"
+  },
+  {
+   "id": "MATH301-288184",
+   "course": "MATH301",
+   "title": "Midterm Exam 2026",
+   "type": "Exam",
+   "week": "2026-10-19",
+   "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-11-25T13_24_44.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-25T17:24+02:00"
+  },
+  {
+   "id": "MATH301-288188",
+   "course": "MATH301",
+   "title": "Solution of Midterm Exam 2026",
+   "type": "Exam",
+   "week": "2026-10-19",
+   "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-11-25T13_39_26.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-25T17:24+02:00"
+  },
+  {
+   "id": "MATH301-288238",
+   "course": "MATH301",
+   "title": "Grading scheme MT26",
+   "type": "Assignment",
+   "week": "2026-10-19",
+   "url": "/Uploads/70/45/70209/GUC_45_70_70209_2026-11-25T15_50_00.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=45&sid=70",
+   "first_seen": "2026-11-25T17:24+02:00"
   },
   {
    "id": "MATH301-283017",
@@ -2957,6 +3006,16 @@
    "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-09-28T15_24_09.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-09-30T17:28+03:00"
+  },
+  {
+   "id": "EDPT1009-288207",
+   "course": "EDPT1009",
+   "title": "Milestone 4 Evaluation Timetable",
+   "type": "Project",
+   "week": "2026-09-07",
+   "url": "/Uploads/70/747/71062/GUC_747_70_71062_2026-11-25T14_20_18.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-25T17:24+02:00"
   },
   {
    "id": "EDPT1009-287579",
