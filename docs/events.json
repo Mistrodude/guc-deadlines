@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-28T01:17+02:00",
+ "generated_at": "2026-11-28T16:00+02:00",
  "first_scan": "2026-09-30T17:28+03:00",
  "today": "2026-11-28",
  "season": "Winter 2026",
@@ -967,6 +967,16 @@
   }
  ],
  "items": [
+  {
+   "id": "MCTR702-288499",
+   "course": "MCTR702",
+   "title": "Lecture 11_Modern Control",
+   "type": "Lecture notes",
+   "week": "2026-11-28",
+   "url": "/Uploads/70/725/75124/GUC_725_70_75124_2026-11-28T09_32_18.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=725&sid=70",
+   "first_seen": "2026-11-28T16:00+02:00"
+  },
   {
    "id": "MATH301-286316",
    "course": "MATH301",
@@ -2916,6 +2926,16 @@
    "url": "/Uploads/70/747/71040/GUC_747_70_71040_2026-10-29T14_19_33.pdf",
    "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
    "first_seen": "2026-10-29T14:24+03:00"
+  },
+  {
+   "id": "EDPT1009-288529",
+   "course": "EDPT1009",
+   "title": "RED Milestone 3",
+   "type": "Other",
+   "week": "2026-09-08",
+   "url": "/Uploads/70/747/71035/GUC_747_70_71035_2026-11-28T15_22_14.pdf",
+   "course_url": "https://cms.guc.edu.eg/apps/student/CourseViewStn.aspx?id=747&sid=70",
+   "first_seen": "2026-11-28T16:00+02:00"
   },
   {
    "id": "EDPT1009-286936",
